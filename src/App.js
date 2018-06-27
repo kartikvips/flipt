@@ -3,7 +3,7 @@ import ReduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reducers from "./reducers";
-import UserProfile from './components/UserProfile';
+import Routes from './Routes';
 
 class App extends Component {
   componentDidMount() {}
@@ -12,7 +12,7 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <UserProfile />
+        {/* <Routes /> */} 
       </Provider>
     );
   }
