@@ -26,12 +26,18 @@ passport.use(new FacebookStrategy(facebook,
     // Gets called when user authorizes access to their profile
     async (accessToken, refreshToken, profile, done)
     // Return done callback and pass transformed user object
-    => done(null, transformFacebookProfile(profile._json))
+    => {
+        console.log(profile._json);
+        done(null, transformFacebookProfile(profile._json));
+    }
 ));
 
 // Register Google Passport strategy
 passport.use(new GoogleStrategy(google,
-    async (accessToken, refreshToken, profile, done) => done(null, transformGoogleProfile(profile._json))
+    async (accessToken, refreshToken, profile, done) => {
+        console.log(profile._json);
+        done(null, transformGoogleProfile(profile._json));
+    }
 ));
 
 // Serialize user into the sessions
@@ -68,7 +74,7 @@ app.get('/auth/google/callback',
     }),
     (req, res) => res.redirect('OAuthLogin://login?user=' + JSON.stringify(req.user)));
 
-// Launch the server on the port 3000
+// Launch the server on the port 5000
 const server = app.listen(5000, () => {
     const {
         address,
@@ -76,3 +82,4 @@ const server = app.listen(5000, () => {
     } = server.address();
     console.log(`Listening at http://${address}:${port}`);
 });
+

@@ -14,7 +14,7 @@ module.exports = (app) => {
             failureRedirect: '/auth/google'
         }),
         (req, res) =>
-        res.redirect('flipt://login?user=' + JSON.stringify(req.user))
+        res.redirect('OAuthLogin://login?user=' + JSON.stringify(req.user))
     );
 
     // app.get(
@@ -25,6 +25,16 @@ module.exports = (app) => {
     //     (req, res) =>
     //     res.send(req.user)
     // );
+
+    // Set up Facebook auth routes
+    app.get('/auth/facebook', passport.authenticate('facebook'));
+
+    app.get('/auth/facebook/callback',
+        passport.authenticate('facebook', {
+            failureRedirect: '/auth/facebook'
+        }),
+        // Redirect user back to the mobile app using Linking with a custom protocol OAuthLogin
+        (req, res) => res.redirect('OAuthLogin://login?user=' + JSON.stringify(req.user)));
 
     app.get('/api/logout', (req, res) => {
         req.logout();
