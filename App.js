@@ -15,7 +15,7 @@ import SafariView from 'react-native-safari-view';
 export default class App extends Component {
 
   state = {
-    user: undefined, // user has not logged in yet
+    user: undefined // user has not logged in yet
   };
 
   // Set up Linking
@@ -23,13 +23,11 @@ export default class App extends Component {
     // Add event listener to handle OAuthLogin:// URLs
     Linking.addEventListener('url', this.handleOpenURL);
     // Launched from an external URL
-    Linking.getInitialURL().then((url) => {
-      if (url) {
-        this.handleOpenURL({
-          url
-        });
-      }
-    });
+    Linking
+      .getInitialURL()
+      .then((url) => {
+        if (url) { this.handleOpenURL({ url }); }
+      });
   };
 
   componentWillUnmount() {
@@ -73,97 +71,55 @@ export default class App extends Component {
   };
 
   render() {
-    const {
-      user
-    } = this.state;
-    return ( <
-      View style = {
-        styles.container
-      } > {
-        user ? // Show user info if already logged in
-        <
-        View style = {
-          styles.content
-        } >
-        <
-        Text style = {
-          styles.header
-        } >
-        Welcome {
-          user.name
-        }!
-        <
-        /Text> <
-        View style = {
-          styles.avatar
-        } >
-        <
-        Image source = {
-          {
-            uri: user.avatar
-          }
-        }
-        style = {
-          styles.avatarImage
-        }
-        /> <
-        /View> <
-        /View> : // Show Please log in message if not
-          <
-          View style = {
-            styles.content
-          } >
-          <
-          Text style = {
-            styles.header
-          } >
+    const { user } = this.state;
+    return ( 
+      <View style = {styles.container}> 
+      {user ? // Show user info if already logged in
+        <View style = {styles.content}>
+          <Text style = {styles.header} >
+            Welcome {user.name}!
+          </Text> 
+          <View style = {styles.avatar} >
+            <Image 
+              source = {{ uri: user.avatar }}
+              style = {styles.avatarImage}
+            /> 
+          </View> 
+        </View> 
+        : // Show Please log in message if not
+        <View style = {styles.content} >
+          <Text style = {styles.header} >
           Welcome Stranger!
-          <
-          /Text> <
-          View style = {
-            styles.avatar
-          } >
-          <
-          Icon name = "user-circle"
-        size = {
-          100
-        }
-        color = "rgba(0,0,0,.09)" / >
-        <
-        /View> <
-        Text style = {
-          styles.text
-        } >
-        Please log in to
-        continue {
-          '\n'
-        }
-        to the awesomness <
-        /Text> <
-        /View>
-      } { /* Login buttons */ } <
-      View style = {
-        styles.buttons
-      } >
-      <
-      Icon.Button name = "facebook"
-      backgroundColor = "#3b5998"
-      onPress = {
-        this.loginWithFacebook
-      } { ...iconStyles
-      } >
-      Login with Facebook <
-      /Icon.Button> <
-      Icon.Button name = "google"
-      backgroundColor = "#DD4B39"
-      onPress = {
-        this.loginWithGoogle
-      } { ...iconStyles
-      } >
-      Or with Google <
-      /Icon.Button> <
-      /View> <
-      /View>
+          </Text> 
+          <View style = {styles.avatar} >
+            <Icon name = "user-circle" size = { 100 } color = "rgba(0,0,0,.09)" />
+          </View> 
+          <Text style = {styles.text} >
+            Please log in to continue {'\n'}
+            to the awesomness 
+          </Text> 
+        </View>
+      } 
+      { /* Login buttons */ } 
+        <View style = {styles.buttons} >
+          <Icon.Button 
+            name = "facebook"
+            backgroundColor = "#3b5998"
+            onPress = {this.loginWithFacebook} 
+            { ...iconStyles } 
+          >
+            Login with Facebook 
+          </Icon.Button> 
+          <Icon.Button 
+            name = "google"
+            backgroundColor = "#DD4B39"
+            onPress = {this.loginWithGoogle}
+            { ...iconStyles}
+          >
+            Or with Google 
+          </Icon.Button> 
+        </View> 
+      </View>
     );
   }
 }
