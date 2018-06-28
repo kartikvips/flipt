@@ -1,4 +1,5 @@
 import { FETCH_BOOK } from "../actions/types";
+import data from "./bookList.json";
 // import {merge} from 'lodash';
 
 export default function(state = null, action) {
@@ -6,6 +7,6 @@ export default function(state = null, action) {
     case FETCH_BOOK:
       return action.payload;
     default:
-      return state;
+      return data;
   }
 }

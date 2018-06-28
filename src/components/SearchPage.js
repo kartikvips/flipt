@@ -10,6 +10,8 @@ class SearchPage extends Component {
     title: 'Search'
   }
   booksByGenre(genre) {
+    console.log('made it here');
+    console.log(this.props);
     return this.props.books.filter(book => book.genre === genre);
   }
 
@@ -25,6 +27,7 @@ class SearchPage extends Component {
                 <RowItem
                   genre={item.name}
                   books={this.booksByGenre(item.name)}
+                  navigate={this.props.navigation.navigate}
                 />
               );
             }}
@@ -54,5 +57,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  null
+  null,
 )(SearchPage);

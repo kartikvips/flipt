@@ -25,6 +25,7 @@ class RowItem extends Component {
           renderItem={({ item }) => {
             return (
               <ListItem
+                navigate={this.props.navigate}
                 book={item}
               />
             )
