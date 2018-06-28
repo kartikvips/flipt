@@ -11,11 +11,6 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SafariView from 'react-native-safari-view';
-import { createBook, fetchBook } from './src/actions/book';
-import {createStore, applyMiddleware} from 'redux';
-import ReduxThunk from 'redux-thunk';
-import reducers from './src/reducers';
-
 
 export default class App extends Component {
 
@@ -25,16 +20,6 @@ export default class App extends Component {
 
   // Set up Linking
   componentDidMount() {
-    // const id = "5b328015c3ae931af01bcf57"
-    // fetchBook(id);
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
-    store.dispatch(createBook({
-      "title": "testingbook234",
-      "author": "author",
-      "year": 2018,
-      "description": "description",
-      "category": "category"
-  }));
     // Add event listener to handle OAuthLogin:// URLs
     Linking.addEventListener('url', this.handleOpenURL);
     // Launched from an external URL
@@ -46,9 +31,7 @@ export default class App extends Component {
   };
 
   componentWillUnmount() {
-    
     // Remove event listener
-
     Linking.removeEventListener('url', this.handleOpenURL);
   };
 

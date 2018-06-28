@@ -3,19 +3,14 @@ import ReduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reducers from "./reducers";
-import Routes from './Routes';
+import RootStack from './RootStack';
 
 class App extends Component {
-  componentDidMount() {
-
-  }
   render() {
-    console.log('here we go')
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
-
     return (
       <Provider store={store}>
-        {/* <Routes /> */} 
+        <RootStack />
       </Provider>
     );
   }
