@@ -26,6 +26,7 @@ class UserProfile extends Component {
                 <RowItem
                   genre={item.name}
                   books={this.booksByGenre(item.name)}
+                  navigate={this.props.navigation.navigate}
                 />
               );
             }}

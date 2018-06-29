@@ -9,7 +9,7 @@ class ListItem extends Component {
     console.log("You tapped", type);
     // this.setState({ selected: type })
     console.log(this.props);
-    this.props.navigate(type);
+    this.props.navigate(type, {book:this.props.book});
   }
 
   render() {

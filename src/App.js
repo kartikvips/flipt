@@ -5,9 +5,9 @@ import { createStore, applyMiddleware } from "redux";
 import reducers from "./reducers";
 import RootStack from './RootStack';
 
+const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 class App extends Component {
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
     return (
       <Provider store={store}>
         <RootStack />

@@ -11,7 +11,6 @@ class RowItem extends Component {
 
   render() {
     const { books, genre } = this.props;
-    console.log("here", genre)
 
     return (
       <Card style={{ flex: 1 }}>

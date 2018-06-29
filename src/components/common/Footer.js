@@ -12,7 +12,6 @@ export class Footer extends Component {
   }
   
   handlePress(type) {
-    console.log("You tapped", type)
     // this.setState({ selected: type })
     this.props.navigate(type)
   }

@@ -10,8 +10,6 @@ class SearchPage extends Component {
     title: 'Search'
   }
   booksByGenre(genre) {
-    console.log('made it here');
-    console.log(this.props);
     return this.props.books.filter(book => book.genre === genre);
   }
 
@@ -51,6 +49,7 @@ let genres = [
 //
 
 const mapStateToProps = state => {
+  console.log(state);
   const { auth, books } = state;
   return { auth, books };
 };
