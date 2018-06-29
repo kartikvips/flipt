@@ -1,15 +1,17 @@
 [
   { 
-    "id": 0,
-    "author": "Chinua Achebe",
-    "country": "Nigeria",
-    "imageLink": "images/things-fall-apart.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-    "pages": 209,
-    "genre": "Genre1",
-    "title": "Things Fall Apart",
-    "year": 1958
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
   },
   { 
     "id": 1,
