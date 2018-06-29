@@ -7,7 +7,7 @@ class BookProfile extends React.Component {
 
     render() {
         const book = this.props.navigation.getParam('book', {title:'nothing'});
-        const { image, infoHolder, imageHolder, rightSide } = styles;
+        const { image, infoHolder, imageHolder, rightSide, textStyle } = styles;
         return( 
         <View style={{ flex: 1 }}>
            <View style={{ flex: 1 }}>
@@ -19,11 +19,11 @@ class BookProfile extends React.Component {
                  />
                 </View>
                <View style= { rightSide }>
-                 <Text style={{ marginTop: 10 }}>{book.title}</Text>
-                 <Text style={{ marginTop: 10 }}>{book.author}</Text>
-                 <Text style={{ marginTop: 10 }}>{book.category}</Text>
-                 <Text style={{ marginTop: 10 }}>Published {book.year}</Text>
-                 <Text style={{ marginTop: 10 }}>Owned by TeamT</Text>
+                 <Text style={ textStyle }>{book.title}</Text>
+                 <Text style={ textStyle }>{book.author}</Text>
+                 <Text style={ textStyle }>{book.category}</Text>
+                 <Text style={ textStyle }>Published {book.year}</Text>
+                 <Text style={ textStyle }>Owned by TeamT</Text>
                  <Button>Borrow</Button>
                </View>
              </View>
@@ -38,6 +38,10 @@ class BookProfile extends React.Component {
 }
 
 const styles = {
+    textStyle: {
+        marginTop: 10,
+        fontWeight: '700'
+    },
     image: {
         height: 275,
         width: 200,
@@ -55,7 +59,8 @@ const styles = {
     justifyContent: 'space-between',
     flexDirection: 'column' ,
     flex: 1,
-    marginLeft: 10 
+    marginLeft: 10 ,
+    marginTop: 10
     
     }
 };
