@@ -6,6 +6,7 @@ import LoginModal from './components/LoginModal';
 import SearchPage from './components/SearchPage';
 import AddBook from './components/AddBook';
 import BookProfile from './components/BookProfile';
+import Messages from './components/Messages';
 
 const RootStack = createStackNavigator({
   Home: SearchPage,
@@ -13,7 +14,8 @@ const RootStack = createStackNavigator({
   Chat: ChatList,
   Login: LoginModal,
   AddBook: AddBook,
-  BookProfile: BookProfile
+  BookProfile: BookProfile,
+  Messages: Messages
 }
 );
 
