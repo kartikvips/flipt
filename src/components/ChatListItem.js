@@ -14,12 +14,12 @@ const ChatListItem = (props) => {
     if (lastMessage.length > 30) {
       return lastMessage.slice(0, 31) + "..."
     } 
-    return lastMessage
-  }
+    return lastMessage;
+  };
 
   const handlePress = () => {
     props.navigate("Messages", { chatWith: props.chat.chatWith })
-  }
+  };
 
   return (
     <TouchableOpacity onPress={()=> handlePress()}>
