@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import { Image, Linking, StyleSheet, Platform, Text, View, Modal } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import SafariView from "react-native-safari-view";
+import { Button } from './common';
+import { YellowBox } from "react-native";
+import { connect } from 'react-redux';
+import { registerUser } from '../actions';
+
+YellowBox.ignoreWarnings([
+  "Warning: isMounted(...) is deprecated",
+  "Module RCTImageLoader"
+]);
 
 class LoginModal extends Component {
   state = { user: undefined }
@@ -20,21 +29,24 @@ class LoginModal extends Component {
 
   componentWillUnmount() {
     // Remove event listener
-    Linking.removeEventListener('url', this.handleOpenURL);
+    Linking.removeEventListener('url', this.handleOpenURL)
   };
 
-  handleOpenURL = ({
-    url
-  }) => {
+  handleOpenURL = ({ url }) => {
     // Extract stringified user string out of the URL
     const [, user_string] = url.match(/user=([^#]+)/);
     this.setState({
       // Decode the user string and parse it into JSON
       user: JSON.parse(decodeURI(user_string))
     });
+    
+    this.props.registerUser(this.state.user)
+
     if (Platform.OS === 'ios') {
       SafariView.dismiss();
     }
+    
+    this.props.navigation.navigate('User', { user: this.state.user });
   };
 
   // Handle Login with Facebook button tap
@@ -62,6 +74,10 @@ class LoginModal extends Component {
     const { user } = this.state;
     return (
       <View style={styles.container}>
+      {/* Just for testing */}
+        {/* <Button onPress={() => alert(user ? user.name : "none")} > */}
+          {/* Show User */}
+        {/* </Button> */}
         {user ? // Show user info if already logged in
           <View style={styles.content}>
             <Text style={styles.header} >
@@ -112,7 +128,7 @@ class LoginModal extends Component {
   }
 }
 
-export default LoginModal;
+export default connect(null, { registerUser })(LoginModal);
 
 const iconStyles = {
   borderRadius: 10,

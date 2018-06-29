@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { View, FlatList } from "react-native";
 import { connect } from "react-redux";
-import { Header, Footer } from "./common";
+import Footer from "./common/Footer";
+// import { Header, Footer } from "./common";
 import RowItem from "./RowItem";
 
 class SearchPage extends Component {
@@ -56,5 +57,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  null,
+  null
 )(SearchPage);

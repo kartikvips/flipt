@@ -5,7 +5,7 @@ import LoginPage from './components/LoginPage';
 import * as actions from './actions';
 import { connect } from 'react-redux';
 // import Yo from './components/Yo';
-// import UserProfile from './components/UserProfile';
+import UserProfile from './components/UserProfile';
 
 class RouterComponent extends Component {
   componentDidMount() {
@@ -24,22 +24,30 @@ class RouterComponent extends Component {
             />
           </Scene> */}
 
-          {/* <Scene key="main">
+          <Scene key="user">
             <Scene
-              rightTitle="YO"
-              onRight={() => Actions.yo()}
+              rightTitle="bell"
+              leftTitle="chats"
+              onRight={() => Actions.bell()}
+              onLeft={() => Actions.chats()}
               key="home"
-              component={Home}
-              title="Home"
+              component={UserProfile}
+              title="Username"
               initial
             />
-            <Scene key="yo" component={Yo} title="Yo" />
-            <Scene key="userProfile" component={UserProfile} titel="Dashboard" /> */}
-          {/* </Scene> */}
+            <Scene key="chats" component={ChatList} title="Messages" />
+            <Scene key="bell" component={NotiList} title="Notification" />
+          </Scene>
+          
+          <Scene key="search">
+          </Scene>
+
+          <Scene key="addBook">
+          </Scene>
         </Scene>
       </Router>
     )
   }
-};
+}
 
 export default connect(null, actions)(RouterComponent);

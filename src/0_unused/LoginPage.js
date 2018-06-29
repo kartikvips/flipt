@@ -11,6 +11,7 @@ class LoginPage extends Component {
 
   goToMainPage() {
     // Actions.main();
+    console.log("main!!")
   }
 
   render() {

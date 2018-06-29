@@ -8,9 +8,6 @@ import { connect } from 'react-redux';
 import UserProfile from './components/UserProfile';
 
 class RouterComponent extends Component {
-  componentDidMount() {
-    // this.props.fetchUser();
-  }
   render() {
     return (
       <Router sceneStyle={{ paddingTop: 65 }}>

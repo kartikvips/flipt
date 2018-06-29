@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { connect } from 'react-redux';
 
-export class Footer extends Component {
+class Footer extends Component {
   state = { selected: this.props.selected }
 
   style(type) {
@@ -12,9 +13,14 @@ export class Footer extends Component {
   }
   
   handlePress(type) {
-    // this.setState({ selected: type })
-    this.props.navigate(type)
+    if (type !== "Home" && !this.props.user) {
+      this.props.navigate('Login')
+    } else {
+      this.props.navigate(type, { user: this.props.user})
+    }
   }
+
+  
 
   render() {
     const { viewStyle } = styles;
@@ -43,6 +49,14 @@ export class Footer extends Component {
     );
   }
 }
+
+const mapStateToProps = ( state ) => {
+  console.log(state)
+  // debugger;
+  return { user: state.auth }
+}
+
+export default connect(mapStateToProps, null)(Footer);
 
 const styles = {
   viewStyle: {

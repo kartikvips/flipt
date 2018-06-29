@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardSection } from './common';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 
 const ChatListItem = (props) => {
   const { chatWith, lastMessage, lastActive } = props.chat;
@@ -16,20 +16,24 @@ const ChatListItem = (props) => {
     } 
     return lastMessage
   }
+
+  const handlePress = () => {
+    props.navigate("Messages", { chatWith: props.chat.chatWith })
+  }
+
   return (
-    <CardSection>
-      <Image
-        style={avatarStyle} 
-        source={{ url: "https://image.ibb.co/jgyD9o/sheldon.jpg" }}
-      />
-      <View style={{ marginTop: 6 }}>
-        <Text style={nameStyle}>{chatWith}</Text>
-        <View style={{ flex: 1, flexDirection: 'row'}}>
-          <Text style={messageStyle}>{renderMessage()}</Text>
-          <Text style={activeStyle}>  {lastActive}</Text>
+    <TouchableOpacity onPress={()=> handlePress()}>
+      <CardSection>
+        <Image style={avatarStyle} source={{ url: "https://image.ibb.co/jgyD9o/sheldon.jpg" }} />
+        <View style={{ marginTop: 6 }}>
+          <Text style={nameStyle}>{chatWith}</Text>
+          <View style={{ flex: 1, flexDirection: "row" }}>
+            <Text style={messageStyle}>{renderMessage()}</Text>
+            <Text style={activeStyle}> {lastActive}</Text>
+          </View>
         </View>
-      </View>
-    </CardSection>
+      </CardSection>
+    </TouchableOpacity>
   );
 }
 

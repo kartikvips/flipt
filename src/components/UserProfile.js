@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import { Header, Card, Footer } from './common';
+import { fetchUser } from '../actions'
+import { Header, Card, Button } from './common';
+import Footer from './common/Footer';
 import RowItem from './RowItem';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class UserProfile extends Component {
 
-  static navigationOptions = {
-    title: 'Username'
+  static navigationOptions = ({ navigation })=>{
+    return ({
+      title: navigation.getParam('user').name,
+      headerRight: (
+        <Icon.Button
+          name="message-text-outline"
+          backgroundColor="transparent"
+          color="#000"
+          onPress={() => navigation.navigate("Chat")}
+        />
+      ),
+      headerLeft: null
+    })
   }
   
   booksByGenre(genre) {
@@ -18,6 +32,10 @@ class UserProfile extends Component {
     return (
       <View style={{ flex: 1 }}>
         {/* <Header headerText="Username" /> */}
+        {/* For testing */}
+        {/* <Button onPress={() => console.log(this.props)}>log props</Button> */}
+        {/* <Button onPress={() => this.props.navigation.navigate('Login')}>login</Button> */}
+        {/* <Button onPress={() => this.props.fetchUser()}>fetch User</Button> */}
         <View style={{ flex: 1 }}>
           <FlatList
             data={genres}
@@ -49,8 +67,7 @@ let genres = [
 ]
 //
 
-const mapStateToProps = state => {
-  const { auth, books } = state;
+const mapStateToProps = ({ auth, books }) => {
   return { auth, books }
 }
 

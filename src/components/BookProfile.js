@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { Header, Footer, Button } from "./common";
+import { Header, Button } from "./common";
+import Footer from './common/Footer';
 
 
 class BookProfile extends React.Component {
