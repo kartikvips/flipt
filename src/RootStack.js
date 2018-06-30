@@ -7,18 +7,17 @@ import SearchPage from './components/SearchPage';
 import AddBook from './components/AddBook';
 import BookProfile from './components/BookProfile';
 import Messages from './components/Messages';
+import HomePage from './components/HomePage';
 
-const RootStack = createStackNavigator(
-  {
-    Home: SearchPage,
-    User: UserProfile,
-    Chat: ChatList,
-    Login: LoginModal,
-    AddBook: AddBook,
-    BookProfile: BookProfile,
-    Messages: Messages
-  }, 
-
+const RootStack = createStackNavigator({
+  Home: HomePage,
+  User: UserProfile,
+  Chat: ChatList,
+  Login: LoginModal,
+  AddBook: AddBook,
+  BookProfile: BookProfile,
+  Messages: Messages
+}
 );
 
 

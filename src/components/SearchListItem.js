@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 import { Image, Text, View, TouchableHighlight } from 'react-native';
 import { CardSection } from './common';
 
-class ListItem extends Component {
+class SearchListItem extends Component {
 
   handlePress(type) {
 
     // this.setState({ selected: type })
- 
     this.props.navigate(type, {book:this.props.book});
   }
 
@@ -25,7 +24,7 @@ class ListItem extends Component {
           }}
         />
         </TouchableHighlight>
-        <View style={{alignItems: 'center', width: 140}}>
+        <View style={{alignItems: 'center', width: 160}}>
           <Text style={titleStyle}>{this.props.book.title}</Text>
         </View>
       </View>
@@ -36,19 +35,22 @@ class ListItem extends Component {
 const styles = {
   titleStyle: {
     fontSize: 12,
-    paddingLeft: 3,
     flexWrap: 'wrap',
-    textAlign: 'center'
+    textAlign: 'center',
+    paddingTop: 5,
+    paddingBottom: 5
   },
   coverStyle: {
-    height: 180,
-    width: 140,
-    resizeMode: Image.resizeMode.contain
+    height: 200,
+    width: 160,
+    resizeMode: Image.resizeMode.stretch
   },
   containerStyle: {
-    flex: 1,
-    flexDirection: "column"
+    flex:1,
+    flexDirection: "column",
+    width: 160,
+    alignItems: 'center'
   }
 };
 
-export default ListItem;
+export default SearchListItem;

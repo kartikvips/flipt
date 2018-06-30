@@ -13,6 +13,7 @@
     ],
     "genre":"Genre1"
   },
+<<<<<<< HEAD
   "1": { 
     "isbn": "1",
     "author": "Hans Christian Andersen",
@@ -443,5 +444,512 @@
     "genre": "Genre5",
     "title": "Love in the Time of Cholera",
     "year": 1985
+=======
+  { 
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "id": 2,
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1"
+  },
+  {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+
+  },
+  {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  { 
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  { 
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+>>>>>>> home-feed
   }
 }
