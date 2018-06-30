@@ -29,7 +29,7 @@ class RowItem extends Component {
               />
             )
           }}
-          keyExtractor={(item, index) => `${item.id}`}
+          keyExtractor={(item, index) => `${item.isbn}`}
         />
       </Card>
     );

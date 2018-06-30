@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { View, FlatList } from "react-native";
 import { connect } from "react-redux";
 import Footer from "./common/Footer";
+import { SearchBar } from "react-native-elements";
 // import { Header, Footer } from "./common";
 import RowItem from "./RowItem";
 
@@ -10,6 +11,13 @@ class SearchPage extends Component {
   static navigationOptions = {
     title: 'Search'
   }
+
+  state = { searchText: "" }
+
+  onChangeText(text) {
+    this.setState({ searchText: text })
+  }
+
   booksByGenre(genre) {
     return this.props.books.filter(book => book.genre === genre);
   }
@@ -18,6 +26,16 @@ class SearchPage extends Component {
     return (
       <View style={{ flex: 1 }}>
         {/* <Header headerText="Search" /> */}
+        <View>
+            <SearchBar
+              lightTheme
+              round
+              searchIcon={{size: 24}}
+              value={ this.state.searchText }
+              onChangeText={text => this.onChangeText(text)}
+              placeholder="Search by title, author..."
+            />
+          </View>
         <View style={{ flex: 1 }}>
           <FlatList
             data={genres}
@@ -50,9 +68,9 @@ let genres = [
 //
 
 const mapStateToProps = state => {
-  console.log(state);
+  // console.log(state);
   const { auth, books } = state;
-  return { auth, books };
+  return { auth, books: Object.values(books) };
 };
 
 export default connect(
