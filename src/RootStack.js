@@ -18,9 +18,7 @@ const RootStack = createStackNavigator(
     BookProfile: BookProfile,
     Messages: Messages
   }, 
-  {
-    initialRouteName: 'AddBook'
-  }
+
 );
 
 
