@@ -8,15 +8,19 @@ import AddBook from './components/AddBook';
 import BookProfile from './components/BookProfile';
 import Messages from './components/Messages';
 
-const RootStack = createStackNavigator({
-  Home: SearchPage,
-  User: UserProfile,
-  Chat: ChatList,
-  Login: LoginModal,
-  AddBook: AddBook,
-  BookProfile: BookProfile,
-  Messages: Messages
-}
+const RootStack = createStackNavigator(
+  {
+    Home: SearchPage,
+    User: UserProfile,
+    Chat: ChatList,
+    Login: LoginModal,
+    AddBook: AddBook,
+    BookProfile: BookProfile,
+    Messages: Messages
+  }, 
+  {
+    initialRouteName: 'AddBook'
+  }
 );
 
 
