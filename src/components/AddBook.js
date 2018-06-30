@@ -52,7 +52,7 @@ class AddBook extends Component {
               placeholder="Enter ISBN..."
             />
             <Button onPress={ () => this.handlePress() }>
-              Add to your library
+              search
             </Button>
           </View>
           <View style={{ flex: 1}}>
@@ -70,7 +70,8 @@ class AddBook extends Component {
 }
 
 const mapStateToProps = state => {
-  return { book: state.books[0] }
+  debugger;
+  return { book: state.books }
 }
 
 export default connect(mapStateToProps, { fetchGoogleBook })(AddBook);
