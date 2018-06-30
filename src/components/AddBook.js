@@ -12,10 +12,10 @@ class AddBook extends Component {
     headerLeft: null
   };
 
-  state={ isbn: "" }
+  state={ isbn: "", book: { title: "none" } }
 
   componentDidMount() {
-    console.log("the book is", this.props.book);
+    console.log("in Addbook componentDidMount, the book is", this.props.books[this.state.isbn] || "yo");
   }
 
   onChangeText(text) {
@@ -28,40 +28,36 @@ class AddBook extends Component {
   }
   
   componentWillReceiveProps(nextProps) {
-    console.log("entered componentWillReceiveProps", nextProps)
-    // if (nextProps.book.title !== this.props.book.title ) {
-    //   console.log("books changed", nextProps.book.title)
-    // }
+    if (nextProps.books.isbn) {
+      const book = nextProps.books[nextProps.books.isbn];
+      debugger;
+      this.props.navigation.navigate("BookProfile", { book }); 
+    }
   }
 
   render() {
     return (
       <View style={{ flex: 1 }}>
-        {/* <View style={{ flex: 1 }}>
-          <Text>Addddddddd</Text>
-        </View> */}
 
-        {/* <Card style={{ flex: 1}}> */}
-          <View style={{ flex: 1 }}>
-            <SearchBar
-              lightTheme
-              round
-              searchIcon={{size: 24}}
-              value={this.state.isbn}
-              onChangeText={text => this.onChangeText(text)}
-              placeholder="Enter ISBN..."
-            />
-            <Button onPress={ () => this.handlePress() }>
-              search
-            </Button>
-          </View>
-          <View style={{ flex: 1}}>
-            {/* <Image 
-              source={require('../../assets/barcode-read.svg')}
-              style={{ height:50, width: 70, color: "" }}
-            /> */}
-          </View>
-        {/* </Card> */}
+        <View style={{ flex: 1 }}>
+          <SearchBar
+            lightTheme
+            round
+            searchIcon={{size: 24}}
+            value={this.state.isbn}
+            onChangeText={text => this.onChangeText(text)}
+            placeholder="Enter ISBN..."
+          />
+          <Button onPress={ () => this.handlePress() }>
+            search
+          </Button>
+        </View>
+        <View style={{ flex: 1}}>
+          {/* <Image 
+            source={require('../../assets/barcode-read.svg')}
+            style={{ height:50, width: 70, color: "" }}
+          /> */}
+        </View>
 
         <Footer selected="AddBook" navigate={this.props.navigation.navigate} />
       </View>
@@ -70,8 +66,8 @@ class AddBook extends Component {
 }
 
 const mapStateToProps = state => {
-  debugger;
-  return { book: state.books }
+  // debugger;
+  return { books: state.books }
 }
 
 export default connect(mapStateToProps, { fetchGoogleBook })(AddBook);

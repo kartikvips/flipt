@@ -9,14 +9,13 @@ export const fetchBook = (id) => {
   };
 };
 
-export const fetchGoogleBook = (isbn) => {
+export const fetchGoogleBook = (searchInput) => {
   // debugger;
   return function (dispatch) {
     axios
-      .get(`http://localhost:5000/books/google/${isbn}`)
+      .get(`http://localhost:5000/books/google/${searchInput}`)
       .then(res => {
-        dispatch({ type: RECEIVE_BOOK, payload: res.data })
-        
+        return dispatch({ type: RECEIVE_BOOK, payload: res.data })
       })
       .catch(err =>  console.log(err));
   }

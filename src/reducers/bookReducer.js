@@ -4,8 +4,8 @@ import data from "./bookList.json";
 export default function(state = data, action) {
   switch (action.type) {
     case RECEIVE_BOOK:
-      debugger;
-      return {...state, [action.payload.isbn]: action.payload  } ;
+      // debugger;
+      return {...state, [action.payload.isbn]: action.payload, isbn: [action.payload.isbn] } ;
     default:
       return state;
   }
