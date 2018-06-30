@@ -5,13 +5,13 @@ INITIAL_STATE = {
 }
 
 export default function(state = null, action) {
-  console.log(action.type)
+
   switch (action.type) {
     case FETCH_USER:
-      console.log("fetched user", action.payload )
+
       return action.payload || false;
     case REGISTER_USER:
-      return action.user
+      return action.user;
     default:
       return state;
   }
