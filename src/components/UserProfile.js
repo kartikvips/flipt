@@ -25,7 +25,7 @@ class UserProfile extends Component {
   }
   
   booksByGenre(genre) {
-    return this.props.books.filter(book => book.genre === genre)
+    return Object.values(this.props.books).filter(book => book.genre === genre)
   }
 
   render() {

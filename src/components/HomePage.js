@@ -24,13 +24,8 @@ class HomePage extends Component {
   }
 
   render() {
-      const bookList = this.props.books.map((book, i) => {
-        return   <SearchListItem
-        key={i}
-        book={book}
-        navigate={this.props.navigation.navigate}
-      />
-      });
+      
+    
     return (
       <View style={{ flex: 1 }}>
         {/* <Header headerText="Search" /> */}
@@ -50,7 +45,7 @@ class HomePage extends Component {
             <FlatList 
             horizontal={false}
             numColumns= {2}
-            data={this.props.books}
+            data={Object.values(this.props.books)}
             renderItem={
                 ({item}) => {
                 return <SearchListItem navigate={this.props.navigation.navigate} book={item}/>
