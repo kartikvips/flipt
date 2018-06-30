@@ -1,12 +1,12 @@
-import { FETCH_BOOK } from "../actions/types";
+import { RECEIVE_BOOK } from "../actions/types";
 import data from "./bookList.json";
 // import {merge} from 'lodash';
-
-export default function(state = null, action) {
+console.log("bookssss areeee", data)
+export default function(state = data, action) {
   switch (action.type) {
-    case FETCH_BOOK:
-      return action.payload;
+    case RECEIVE_BOOK:
+      return {...state, [action.payload.isbn]: action.payload  } ;
     default:
-      return data;
+      return state;
   }
 }

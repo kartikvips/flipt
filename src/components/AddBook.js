@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { connect } from 'react-redux';
+import { View, Text, Image, Linking } from 'react-native';
 import { SearchBar } from 'react-native-elements';
-import { Input, Card, CardSection } from './common';
+import { Input, Card, CardSection, Button } from './common';
 import Footer from "./common/Footer";
+import { fetchGoogleBook } from '../actions/book';
 
 class AddBook extends Component {
   static navigationOptions = {
@@ -10,10 +12,26 @@ class AddBook extends Component {
     headerLeft: null
   };
 
-  state={ isbn: ""}
+  state={ isbn: "" }
+
+  componentDidMount() {
+    console.log("the book is", this.props.book);
+  }
 
   onChangeText(text) {
     this.setState({isbn: text})
+  }
+
+  handlePress() {
+    const { isbn } = this.state;
+    this.props.fetchGoogleBook(isbn);
+  }
+  
+  componentWillReceiveProps(nextProps) {
+    console.log("entered componentWillReceiveProps", nextProps)
+    // if (nextProps.book.title !== this.props.book.title ) {
+    //   console.log("books changed", nextProps.book.title)
+    // }
   }
 
   render() {
@@ -33,7 +51,9 @@ class AddBook extends Component {
               onChangeText={text => this.onChangeText(text)}
               placeholder="Enter ISBN..."
             />
-            {/* <Button></Button> */}
+            <Button onPress={ () => this.handlePress() }>
+              Add to your library
+            </Button>
           </View>
           <View style={{ flex: 1}}>
             {/* <Image 
@@ -49,4 +69,8 @@ class AddBook extends Component {
   }
 }
 
-export default AddBook;
+const mapStateToProps = state => {
+  return { book: state.books[0] }
+}
+
+export default connect(mapStateToProps, { fetchGoogleBook })(AddBook);
