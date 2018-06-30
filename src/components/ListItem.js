@@ -6,10 +6,9 @@ import { CardSection } from './common';
 class ListItem extends Component {
 
   handlePress(type) {
-    console.log("You tapped", type);
-    // this.setState({ selected: type })
-    console.log(this.props);
-    this.props.navigate(type, {book:this.props.book});
+    // console.log("You tapped", type);
+    // console.log(this.props);
+    this.props.navigate(type, { book: this.props.book });
   }
 
   render() {
