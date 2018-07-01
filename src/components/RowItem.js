@@ -4,7 +4,7 @@ import {
   FlatList,
   View
 } from "react-native";
-import { Card, CardSection } from "./common";
+import { Card, CardSection2 } from "./common";
 import ListItem from './ListItem';
 
 class RowItem extends Component {
@@ -14,9 +14,9 @@ class RowItem extends Component {
 
     return (
       <Card style={{  }}>
-        <CardSection>
+        <CardSection2>
           <Text style={{color: '#fff'}}>{genre}</Text>
-        </CardSection>
+        </CardSection2>
         <FlatList
           showsHorizontalScrollIndicator={false}
           horizontal

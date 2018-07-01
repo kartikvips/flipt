@@ -41,8 +41,9 @@ const styles = {
     paddingBottom: 5
   },
   coverStyle: {
+    borderRadius: 10,
     height: 200,
-    width: 160,
+    width: 170,
     resizeMode: Image.resizeMode.stretch
   },
   containerStyle: {

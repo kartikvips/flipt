@@ -41,12 +41,15 @@ const styles = {
     textAlign: 'center'
   },
   coverStyle: {
+    borderRadius: 10,
     height: 180,
     width: 140,
-    resizeMode: Image.resizeMode.contain
+    resizeMode: Image.resizeMode.stretch
   },
   containerStyle: {
     height: 180,
+    width: 140,
+    marginRight: 10,
     flexDirection: "column"
   }
 };
