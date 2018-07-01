@@ -12,15 +12,15 @@ import screen from './components/GMap';
 
 const RootStack = createStackNavigator(
   {
-    Home: HomePage,
+    Home: AddBook,
     User: UserProfile,
     Chat: ChatList,
     Login: LoginModal,
-    AddBook: AddBook,
+    AddBook: HomePage,
     BookProfile: BookProfile,
     Messages: Messages,
     Map: screen
-  }, 
+  }
 
 );
 

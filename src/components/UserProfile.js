@@ -9,9 +9,15 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class UserProfile extends Component {
 
-  static navigationOptions = ({ navigation })=>{
+  static navigationOptions = ({navigation})=>{
+    console.log('this is the navigation',navigation);
+    let name;
+    if (navigation.getParam('user')) {name = navigation.getParam('user').name ;}
+    if (navigation.state.params && !navigation.getParam('user')) {name = navigation.state.params.name;}
+ 
     return ({
-      title: navigation.getParam('user').name,
+      title: name,
+      // title: this.props.auth.name,
       headerRight: (
         <Icon.Button
           name="message-text-outline"
@@ -83,7 +89,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
-  console.log(auth.books);
+
   return { auth, books }
 }
 
