@@ -30,7 +30,6 @@ class AddBook extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.books.isbn) {
       const book = nextProps.books[nextProps.books.isbn];
-      debugger;
       this.props.navigation.navigate("BookProfile", { book, type: "Add" }); 
     }
   }
