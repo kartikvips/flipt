@@ -21,9 +21,7 @@ const RootStack = createStackNavigator(
     Messages: Messages,
     Map: screen
   }, 
-  {
-    initialRouteName: 'Map'
-  }
+
 );
 
 
