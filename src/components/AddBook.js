@@ -15,7 +15,7 @@ class AddBook extends Component {
   state={ isbn: "", book: null}
 
   componentDidMount() {
-    console.log("in Addbook componentDidMount, the book is", this.props.books[this.state.isbn] || "yo");
+    // console.log("in Addbook componentDidMount, the book is", this.props.books[this.state.isbn] || "yo");
   }
 
   onChangeText(text) {
@@ -40,7 +40,7 @@ class AddBook extends Component {
     if (book){
       return (
         <View style={{ flex: 1, justifyContent: 'center' }}>
-          <BookDetails book={book} text={'Add'}/>
+          <BookDetails book={book} text={'Add'} action={this.addBook.bind(this)}/>
         </View>
       );
     }else {
@@ -51,6 +51,7 @@ class AddBook extends Component {
   addBook(book) {
     book.ownerId  = this.props.auth.id;
     this.props.createBook(book);
+    this.props.navigation.navigate('User');
   }
 
   render() {

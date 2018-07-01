@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
 import {Button} from './index';
+import {connect} from 'react-redux';
 
 export class BookDetails extends React.Component {
 
     render(){
         const {infoHolder, imageHolder, image, rightSide, textStyle} = styles;
-        const {book, text} = this.props;
+        const {book, text, action} = this.props;
     return (
         <View style={ infoHolder }>
         <View style={ imageHolder }>
@@ -20,7 +21,7 @@ export class BookDetails extends React.Component {
         <Text style={ textStyle }>{book.author}</Text>
         <Text style={ textStyle }>{book.category}</Text>
         <Text style={ textStyle }>Published {book.year}</Text>
-        <Button>{text}</Button>
+        <Button onPress={() => action(book)}>{text}</Button>
         </View>
         </View>
         );
@@ -54,3 +55,10 @@ const styles = {
     
     }
 };
+
+const mapStateToProps = state => {
+    // debugger;
+    return { books: state.books, auth: state.auth };
+  };
+
+  export default connect(mapStateToProps, null)(BookDetails);

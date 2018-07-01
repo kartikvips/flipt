@@ -42,7 +42,7 @@ class UserProfile extends Component {
           
                 <RowItem
                   genre={"Owned Books"}
-                  books={this.booksByGenre("Genre1")}
+                  books={this.props.auth.books}
                   navigate={this.props.navigation.navigate}
                 />
                 <RowItem
@@ -83,6 +83,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
+  console.log(auth.books);
   return { auth, books }
 }
 
