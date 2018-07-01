@@ -7,7 +7,7 @@ import SearchPage from './components/SearchPage';
 import AddBook from './components/AddBook';
 import BookProfile from './components/BookProfile';
 import Messages from './components/Messages';
-import GMap from './components/GMap';
+import screen from './components/GMap';
 
 const RootStack = createStackNavigator(
   {
@@ -18,7 +18,7 @@ const RootStack = createStackNavigator(
     AddBook: AddBook,
     BookProfile: BookProfile,
     Messages: Messages,
-    Map: GMap
+    Map: screen
   }, 
   {
     initialRouteName: 'Map'
