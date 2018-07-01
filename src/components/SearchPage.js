@@ -68,7 +68,6 @@ let genres = [
 //
 
 const mapStateToProps = state => {
-  // console.log(state);
   const { auth, books } = state;
   return { auth, books: Object.values(books) };
 };

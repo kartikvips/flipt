@@ -4,7 +4,7 @@ import {
   FlatList,
   View
 } from "react-native";
-import { Card, CardSection } from "./common";
+import { Card, CardSection2 } from "./common";
 import ListItem from './ListItem';
 
 class RowItem extends Component {
@@ -13,10 +13,10 @@ class RowItem extends Component {
     const { books, genre } = this.props;
 
     return (
-      <Card style={{ flex: 1 }}>
-        <CardSection>
-          <Text>{genre}</Text>
-        </CardSection>
+      <Card style={{  }}>
+        <CardSection2>
+          <Text style={{color: '#fff'}}>{genre}</Text>
+        </CardSection2>
         <FlatList
           showsHorizontalScrollIndicator={false}
           horizontal

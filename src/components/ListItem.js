@@ -6,9 +6,10 @@ import { CardSection } from './common';
 class ListItem extends Component {
 
   handlePress(type) {
-    // console.log("You tapped", type);
-    // console.log(this.props);
-    this.props.navigate(type, { book: this.props.book });
+
+    // this.setState({ selected: type })
+ 
+    this.props.navigate(type, {book:this.props.book});
   }
 
   render() {
@@ -20,7 +21,7 @@ class ListItem extends Component {
         <Image
           style={coverStyle}
           source={{
-            url: "https://ewedit.files.wordpress.com/2016/09/hpsorcstone.jpg"
+            uri: this.props.book.imageUrl
           }}
         />
         </TouchableHighlight>
@@ -40,12 +41,15 @@ const styles = {
     textAlign: 'center'
   },
   coverStyle: {
+    borderRadius: 10,
     height: 180,
     width: 140,
-    resizeMode: Image.resizeMode.contain
+    resizeMode: Image.resizeMode.stretch
   },
   containerStyle: {
-    flex: 1,
+    height: 180,
+    width: 140,
+    marginRight: 10,
     flexDirection: "column"
   }
 };
