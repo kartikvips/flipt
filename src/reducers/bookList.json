@@ -1,5 +1,5 @@
 {
-  "0":{ 
+  "0": { 
     "title": "Great Expectations",
     "author": [
         "Charles Dickens"
@@ -16,448 +16,526 @@
     "lng": -122.3457
   },
   "1": { 
-    "isbn": "1",
-    "author": "Hans Christian Andersen",
-    "country": "Denmark",
-    "imageLink": "images/fairy-tales.jpg",
-    "language": "Danish",
-    "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
-    "pages": 784,
-    "genre": "Genre1",
-    "title": "Fairy tales",
-    "year": 1836,
-    "lat": 37.9654,
-    "lng": -122.2345
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2249,
+        "lng": -122.3447
   },
   "2": {
-    "isbn": "2",
-    "author": "Dante Alighieri",
-    "country": "Italy",
-    "imageLink": "images/the-divine-comedy.jpg",
-    "language": "Italian",
-    "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-    "pages": 928,
-    "genre": "Genre1",
-    "title": "The Divine Comedy",
-    "year": 1315,
-    "lat": 37.3639,
-    "lng": -122.7478
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.3249,
+        "lng": -122.3447
   },
   "3": {
-    "isbn": "3",
-    "author": "Unknown",
-    "country": "Sumer and Akkadian Empire",
-    "imageLink": "images/the-epic-of-gilgamesh.jpg",
-    "language": "Akkadian",
-    "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
-    "pages": 160,
-    "genre": "Genre1",
-    "title": "The Epic Of Gilgamesh",
-    "year": -1700,
-    "lat": 37.3948,
-    "lng": -122.1092
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2679,
+        "lng": -122.4557
   },
   "4": {
-    "isbn": "4",
-    "author": "Unknown",
-    "country": "Achaemenid Empire",
-    "imageLink": "images/the-book-of-job.jpg",
-    "language": "Hebrew",
-    "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
-    "pages": 176,
-    "genre": "Genre1",
-    "title": "The Book Of Job",
-    "year": -600,
-    "lat": 37.0655,
-    "lng": -122.3894
-  },
-  "5": {
-    "isbn": "5",
-    "author": "Unknown",
-    "country": "India/Iran/Iraq/Egypt/Tajikistan",
-    "imageLink": "images/one-thousand-and-one-nights.jpg",
-    "language": "Arabic",
-    "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
-    "pages": 288,
-    "genre": "Genre1",
-    "title": "One Thousand and One Nights",
-    "year": 1200,
-    "lat": 37.9455,
-    "lng": -122.8904
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2889,
+        "lng": -122.3247
   },
   "6": {
-    "isbn": "6",
-    "author": "Unknown",
-    "country": "Iceland",
-    "imageLink": "images/njals-saga.jpg",
-    "language": "Old Norse",
-    "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
-    "pages": 384,
-    "genre": "Genre1",
-    "title": "Njál's Saga",
-    "year": 1350,
-    "lat": 37.1345,
-    "lng": -122.1245
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2789,
+        "lng": -122.3456
   },
   "7": {
-    "isbn": "7",
-    "author": "Jane Austen",
-    "country": "United Kingdom",
-    "imageLink": "images/pride-and-prejudice.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
-    "pages": 226,
-    "genre": "Genre2",
-    "title": "Pride and Prejudice",
-    "year": 1813,
-    "lat": 37.1304,
-    "lng": -122.9576
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2345,
+        "lng": -122.3426
   },
-  // "8": {
-  //   "isbn": "8",
-  //   "author": "Honoré de Balzac",
-  //   "country": "France",
-  //   "imageLink": "images/le-pere-goriot.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
-  //   "pages": 443,
-  //   "genre": "Genre2",
-  //   "title": "Le Père Goriot",
-  //   "year": 1835
-  // },
-  // "9": {
-  //   "isbn": "9",
-  //   "author": "Samuel Beckett",
-  //   "country": "Republic of Ireland",
-  //   "imageLink": "images/molloy-malone-dies-the-unnamable.jpg",
-  //   "language": "French, English",
-  //   "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
-  //   "pages": 256,
-  //   "genre": "Genre2",
-  //   "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
-  //   "year": 1952
-  // },
-  // "10": { 
-  //   "isbn": "10",
-  //   "author": "Giovanni Boccaccio",
-  //   "country": "Italy",
-  //   "imageLink": "images/the-decameron.jpg",
-  //   "language": "Italian",
-  //   "link": "https://en.wikipedia.org/wiki/The_Decameron\n",
-  //   "pages": 1024,
-  //   "genre": "Genre2",
-  //   "title": "The Decameron",
-  //   "year": 1351
-  // },
-  // "11": {
-  //   "isbn": "11",
-  //   "author": "Jorge Luis Borges",
-  //   "country": "Argentina",
-  //   "imageLink": "images/ficciones.jpg",
-  //   "language": "Spanish",
-  //   "link": "https://en.wikipedia.org/wiki/Ficciones\n",
-  //   "pages": 224,
-  //   "genre": "Genre2",
-  //   "title": "Ficciones",
-  //   "year": 1965
-  // },
-  // "12": { 
-  //   "isbn": "12",
-  //   "author": "Emily Brontë",
-  //   "country": "United Kingdom",
-  //   "imageLink": "images/wuthering-heights.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Wuthering_Heights\n",
-  //   "pages": 342,
-  //   "genre": "Genre2",
-  //   "title": "Wuthering Heights",
-  //   "year": 1847
-  // },
-  // "13": {
-  //   "isbn": "13",
-  //   "author": "Albert Camus",
-  //   "country": "Algeria, French Empire",
-  //   "imageLink": "images/l-etranger.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)\n",
-  //   "pages": 185,
-  //   "genre": "Genre2",
-  //   "title": "The Stranger",
-  //   "year": 1942
-  // },
-  // "14": {
-  //   "isbn": "14",
-  //   "author": "Paul Celan",
-  //   "country": "Romania, France",
-  //   "imageLink": "images/poems-paul-celan.jpg",
-  //   "language": "German",
-  //   "link": "\n",
-  //   "pages": 320,
-  //   "genre": "Genre3",
-  //   "title": "Poems",
-  //   "year": 1952
-  // },
-  // "15": {
-  //   "isbn": "15",
-  //   "author": "Louis-Ferdinand Céline",
-  //   "country": "France",
-  //   "imageLink": "images/voyage-au-bout-de-la-nuit.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night\n",
-  //   "pages": 505,
-  //   "genre": "Genre3",
-  //   "title": "Journey to the End of the Night",
-  //   "year": 1932
-  // },
-  // "16": {
-  //   "isbn": "16",
-  //   "author": "Miguel de Cervantes",
-  //   "country": "Spain",
-  //   "imageLink": "images/don-quijote-de-la-mancha.jpg",
-  //   "language": "Spanish",
-  //   "link": "https://en.wikipedia.org/wiki/Don_Quixote\n",
-  //   "pages": 1056,
-  //   "genre": "Genre3",
-  //   "title": "Don Quijote De La Mancha",
-  //   "year": 1610
-  // },
-  // "17": {
-  //   "isbn": "17",
-  //   "author": "Geoffrey Chaucer",
-  //   "country": "England",
-  //   "imageLink": "images/the-canterbury-tales.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales\n",
-  //   "pages": 544,
-  //   "genre": "Genre3",
-  //   "title": "The Canterbury Tales",
-  //   "year": 1450
-  // },
-  // "36": {
-  //   "isbn": "36",
-  //   "author": "Anton Chekhov",
-  //   "country": "Russia",
-  //   "imageLink": "images/stories-of-anton-chekhov.jpg",
-  //   "language": "Russian",
-  //   "link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov\n",
-  //   "pages": 194,
-  //   "genre": "Genre3",
-  //   "title": "Stories",
-  //   "year": 1886
-  // },
-  // "18": {
-  //   "isbn": "18",
-  //   "author": "Joseph Conrad",
-  //   "country": "United Kingdom",
-  //   "imageLink": "images/nostromo.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Nostromo\n",
-  //   "pages": 320,
-  //   "genre": "Genre3",
-  //   "title": "Nostromo",
-  //   "year": 1904
-  // },
-  // "19": {
-  //   "isbn": "19",
-  //   "author": "Charles Dickens",
-  //   "country": "United Kingdom",
-  //   "imageLink": "images/great-expectations.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Great_Expectations\n",
-  //   "pages": 194,
-  //   "genre": "Genre3",
-  //   "title": "Great Expectations",
-  //   "year": 1861
-  // },
-  // "20": {
-  //   "isbn": "20",
-  //   "author": "Denis Diderot",
-  //   "country": "France",
-  //   "imageLink": "images/jacques-the-fatalist.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
-  //   "pages": 596,
-  //   "genre": "Genre3",
-  //   "title": "Jacques the Fatalist",
-  //   "year": 1796
-  // },
-  // "21": {
-  //   "isbn": "21",
-  //   "author": "Alfred Döblin",
-  //   "country": "Germany",
-  //   "imageLink": "images/berlin-alexanderplatz.jpg",
-  //   "language": "German",
-  //   "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz\n",
-  //   "pages": 600,
-  //   "genre": "Genre3",
-  //   "title": "Berlin Alexanderplatz",
-  //   "year": 1929
-  // },
-  // "22": {
-  //   "isbn": "22",
-  //   "author": "Fyodor Dostoevsky",
-  //   "country": "Russia",
-  //   "imageLink": "images/crime-and-punishment.jpg",
-  //   "language": "Russian",
-  //   "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment\n",
-  //   "pages": 551,
-  //   "genre": "Genre4",
-  //   "title": "Crime and Punishment",
-  //   "year": 1866
-  // },
-  // "23": {
-  //   "isbn": "23",
-  //   "author": "Fyodor Dostoevsky",
-  //   "country": "Russia",
-  //   "imageLink": "images/the-idiot.jpg",
-  //   "language": "Russian",
-  //   "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
-  //   "pages": 656,
-  //   "genre": "Genre4",
-  //   "title": "The Idiot",
-  //   "year": 1869
-  // },
-  // "24": {
-  //   "isbn": "24",
-  //   "author": "Fyodor Dostoevsky",
-  //   "country": "Russia",
-  //   "imageLink": "images/the-possessed.jpg",
-  //   "language": "Russian",
-  //   "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)\n",
-  //   "pages": 768,
-  //   "genre": "Genre4",
-  //   "title": "The Possessed",
-  //   "year": 1872
-  // },
-  // "25": {
-  //   "isbn": "25",
-  //   "author": "Fyodor Dostoevsky",
-  //   "country": "Russia",
-  //   "imageLink": "images/the-brothers-karamazov.jpg",
-  //   "language": "Russian",
-  //   "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
-  //   "pages": 824,
-  //   "genre": "Genre4",
-  //   "title": "The Brothers Karamazov",
-  //   "year": 1880
-  // },
-  // "26": {
-  //   "isbn": "26",
-  //   "author": "George Eliot",
-  //   "country": "United Kingdom",
-  //   "imageLink": "images/middlemarch.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Middlemarch\n",
-  //   "pages": 800,
-  //   "genre": "Genre4",
-  //   "title": "Middlemarch",
-  //   "year": 1871
-  // },
-  // "27": {
-  //   "isbn": "27",
-  //   "author": "Ralph Ellison",
-  //   "country": "United States",
-  //   "imageLink": "images/invisible-man.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Invisible_Man\n",
-  //   "pages": 581,
-  //   "genre": "Genre4",
-  //   "title": "Invisible Man",
-  //   "year": 1952
-  // },
-  // "28": {
-  //   "isbn": "28",
-  //   "author": "Euripides",
-  //   "country": "Greece",
-  //   "imageLink": "images/medea.jpg",
-  //   "language": "Greek",
-  //   "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
-  //   "pages": 104,
-  //   "genre": "Genre5",
-  //   "title": "Medea",
-  //   "year": -431
-  // },
-  // "29": {
-  //   "isbn": "29",
-  //   "author": "William Faulkner",
-  //   "country": "United States",
-  //   "imageLink": "images/absalom-absalom.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!\n",
-  //   "pages": 313,
-  //   "genre": "Genre5",
-  //   "title": "Absalom, Absalom!",
-  //   "year": 1936
-  // },
-  // "30": {
-  //   "isbn": "30",
-  //   "author": "William Faulkner",
-  //   "country": "United States",
-  //   "imageLink": "images/the-sound-and-the-fury.jpg",
-  //   "language": "English",
-  //   "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury\n",
-  //   "pages": 326,
-  //   "genre": "Genre5",
-  //   "title": "The Sound and the Fury",
-  //   "year": 1929
-  // },
-  // "31": {
-  //   "isbn": "31",
-  //   "author": "Gustave Flaubert",
-  //   "country": "France",
-  //   "imageLink": "images/madame-bovary.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
-  //   "pages": 528,
-  //   "genre": "Genre5",
-  //   "title": "Madame Bovary",
-  //   "year": 1857
-  // },
-  // "32": {
-  //   "isbn": "32",
-  //   "author": "Gustave Flaubert",
-  //   "country": "France",
-  //   "imageLink": "images/l-education-sentimentale.jpg",
-  //   "language": "French",
-  //   "link": "https://en.wikipedia.org/wiki/Sentimental_Education\n",
-  //   "pages": 606,
-  //   "genre": "Genre5",
-  //   "title": "Sentimental Education",
-  //   "year": 1869
-  // },
-  // "33": {
-  //   "isbn": "33",
-  //   "author": "Federico García Lorca",
-  //   "country": "Spain",
-  //   "imageLink": "images/gypsy-ballads.jpg",
-  //   "language": "Spanish",
-  //   "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads\n",
-  //   "pages": 218,
-  //   "genre": "Genre5",
-  //   "title": "Gypsy Ballads",
-  //   "year": 1928
-  // },
-  // "34": {
-  //   "isbn": "34",
-  //   "author": "Gabriel García Márquez",
-  //   "country": "Colombia",
-  //   "imageLink": "images/one-hundred-years-of-solitude.jpg",
-  //   "language": "Spanish",
-  //   "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
-  //   "pages": 417,"genre": "Genre5",
-  //   "title": "One Hundred Years of Solitude",
-  //   "year": 1967
-  // },
-  // "35": {
-  //   "isbn": "35",
-  //   "author": "Gabriel García Márquez",
-  //   "country": "Colombia",
-  //   "imageLink": "images/love-in-the-time-of-cholera.jpg",
-  //   "language": "Spanish",
-  //   "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
-  //   "pages": 368,
-  //   "genre": "Genre5",
-  //   "title": "Love in the Time of Cholera",
-  //   "year": 1985
-  // }
+  "8": {
+    "title": "Great Expectations",
+    "author": [
+        "Charles Dickens"
+    ],
+    "isbn": "1613820763",
+    "year": "2011",
+    "description": "Timeless Classics--designed for the struggling reader and adapted to retain the integrity of the original classic. These classics will grab a student's attention from the first page. Included are eight pages of end-of-book activities to enhance the reading experience.Pip is headed for an apprenticeship at the blacksmith's forge. Then an anonymous donor appears, and sends Pip to London to live as a gentleman. Pip is sure he knows the identity of his secret benefactor. He couldn't be more surprised when he finds that he's been mistaken all along.",
+    "imageUrl": "https://books.google.com/books/content?id=7UyLgyWoHv0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre":"Genre1",
+        "lat": 37.2789,
+        "lng": -122.3137
+  },
+  "9": {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2",
+        "lat": 37.2789,
+        "lng": -122.2348
+
+  },
+  "10": {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2",
+        "lat": 37.2349,
+        "lng": -122.3397
+  },
+  "11": { 
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  "12": {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  "13": { 
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  "14": {
+    "title": "Crocodile Tears",
+    "author": [
+        "Anthony Horowitz"
+    ],
+    "isbn": "9788700631625",
+    "year": "2009",
+    "description": "Alex Rider does battle with a charity broker con artist who has invested millions of dollars in a form of genetically modified corn that can release an airborne strain of virus capable of knocking out an entire country in one day.",
+    "imageUrl": "https://books.google.com/books/content?id=sdCoDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre2"
+  },
+  "15": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "16": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "17": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "18": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "19": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "20": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "21": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "22": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "23": {
+    "title": "Captain Underpants and the Terrifying Return of Tippy Tinkletrousers",
+    "author": [
+        "Dav Pilkey"
+    ],
+    "isbn": "9788184771695",
+    "year": "2014",
+    "description": "CAPTAIN UNDERPANTS returns! In their ninth epic adventure, George and Harold encounter a familiar face - Professor Poopypants! He now goes by the name Tippy Tinkletrousers and it's up to George, Harold, and the amazing Captain Underpants to stop Tippy Tinkletrousers' reign of terror before it's too late!",
+    "imageUrl": "https://books.google.com/books/content?id=9YpIBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Juvenile Fiction"
+    ],
+    "genre": "Genre3"
+  },
+  "24": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "25": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "26": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "27": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "28": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "29": {
+    "title": "#famous",
+    "author": [
+        "Jilly Gagnon"
+    ],
+    "isbn": "9780451119674",
+    "year": "2017",
+    "description": "Debut author Jilly Gagnon bursts onto the scene with a story equal parts bite and romance, perfect for fans of Jenny Han and Jennifer E. Smith, about falling for someone in front of everyone. In this modern day love story: Girl likes boy. Girl snaps photo and posts it online. Boy becomes insta-famous. And what starts out as an innocent photo turns into a whirlwind adventure that forces them both to question whether fame—and love—are worth the price…and changes both of their lives forever. Told from alternating points of view, #famous captures the sometimes-crazy thrill ride of social media and the equally messy but wonderful moments of liking someone in real life.",
+    "imageUrl": "https://books.google.com/books/content?id=EXY1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Young Adult Fiction"
+    ],
+    "genre": "Genre4"
+  },
+  "30": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "31": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "32": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "33": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "34": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "35": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "36": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  },
+  "37": {
+    "title": "Pet Sematary",
+    "author": [
+        "Stephen King"
+    ],
+    "isbn": "1501156705",
+    "year": "2017",
+    "description": "\"Newly introduced by the author\"--Cover.",
+    "imageUrl": "https://books.google.com/books/content?id=FNn5DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "category": [
+        "Fiction"
+    ],
+    "genre":"Genre5"
+  }
 }

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { View, FlatList } from "react-native";
+import { View, FlatList, ListView, Text } from "react-native";
 import { connect } from "react-redux";
 import Footer from "./common/Footer";
 import { SearchBar } from "react-native-elements";
 // import { Header, Footer } from "./common";
-import RowItem from "./RowItem";
+import SearchListItem from "./SearchListItem";
 
-class SearchPage extends Component {
+
+class HomePage extends Component {
 
   static navigationOptions = {
     title: 'Search'
@@ -23,6 +24,8 @@ class SearchPage extends Component {
   }
 
   render() {
+      
+    
     return (
       <View style={{ flex: 1 }}>
         {/* <Header headerText="Search" /> */}
@@ -36,20 +39,20 @@ class SearchPage extends Component {
               placeholder="Search by title, author..."
             />
           </View>
-        <View style={{ flex: 1 }}>
-          <FlatList
-            data={genres}
-            renderItem={({ item }) => {
-              return (
-                <RowItem
-                  genre={item.name}
-                  books={this.booksByGenre(item.name)}
-                  navigate={this.props.navigation.navigate}
-                />
-              );
-            }}
-            keyExtractor={item => `${item.id}`}
-          />
+          
+        <View style={{ flex: 1 , marginTop: 10}}>
+        
+            <FlatList 
+            horizontal={false}
+            numColumns= {2}
+            data={Object.values(this.props.books)}
+            renderItem={
+                ({item}) => {
+                return <SearchListItem navigate={this.props.navigation.navigate} book={item}/>
+            }
+            }
+            />
+
         </View>
         <Footer selected="Home" navigate={this.props.navigation.navigate} />
       </View>
@@ -69,10 +72,22 @@ let genres = [
 
 const mapStateToProps = state => {
   const { auth, books } = state;
-  return { auth, books: Object.values(books) };
+  return { auth, books };
 };
+
+const styles = {
+    list: {
+        flexDirection: 'row',
+        flexWrap: 'wrap'
+    },
+    item: {
+        backgroundColor: 'red',
+        margin: 3,
+        width: 150
+    }
+}
 
 export default connect(
   mapStateToProps,
   null
-)(SearchPage);
+)(HomePage);

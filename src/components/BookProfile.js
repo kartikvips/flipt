@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, ScrollView } from 'react-native';
 import { Header, Button } from "./common";
 import Footer from './common/Footer';
 
@@ -8,6 +8,7 @@ class BookProfile extends React.Component {
 
     render() {
         const book = this.props.navigation.getParam('book', {title:'nothing'});
+        
         const { image, infoHolder, imageHolder, rightSide, textStyle } = styles;
         return( 
         <View style={{ flex: 1 }}>
@@ -28,7 +29,10 @@ class BookProfile extends React.Component {
                  <Button>Borrow</Button>
                </View>
              </View>
+            <ScrollView>
+
                 <Text style= {{ marginTop: 15, marginLeft: 10 }}>{book.description}</Text>
+            </ScrollView>
             </View>
           <Footer navigate={this.props.navigation.navigate} />
         </View>
