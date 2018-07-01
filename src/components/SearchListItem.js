@@ -6,8 +6,6 @@ import { CardSection } from './common';
 class SearchListItem extends Component {
 
   handlePress(type) {
-
-    // this.setState({ selected: type })
     this.props.navigate(type, {book:this.props.book, type: "Borrow"});
   }
 
