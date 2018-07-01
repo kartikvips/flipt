@@ -8,7 +8,7 @@ class BookProfile extends React.Component {
 
     render() {
         const book = this.props.navigation.getParam('book', {title:'nothing'});
-        
+        const ButtonType = this.props.navigation.getParam('type');
         const { image, infoHolder, imageHolder, rightSide, textStyle } = styles;
         return( 
         <View style={{ flex: 1 }}>
@@ -26,7 +26,7 @@ class BookProfile extends React.Component {
                  <Text style={ textStyle }>{book.category}</Text>
                  <Text style={ textStyle }>Published {book.year}</Text>
                  <Text style={ textStyle }>Owned by TeamT</Text>
-                 <Button>Borrow</Button>
+                 <Button>{ButtonType}</Button>
                </View>
              </View>
             <ScrollView>

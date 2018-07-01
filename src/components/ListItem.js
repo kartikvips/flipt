@@ -9,7 +9,7 @@ class ListItem extends Component {
 
     // this.setState({ selected: type })
  
-    this.props.navigate(type, {book:this.props.book});
+    this.props.navigate(type, {book:this.props.book, type: "Borrow"});
   }
 
   render() {

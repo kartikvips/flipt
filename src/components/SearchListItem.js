@@ -8,7 +8,7 @@ class SearchListItem extends Component {
   handlePress(type) {
 
     // this.setState({ selected: type })
-    this.props.navigate(type, {book:this.props.book});
+    this.props.navigate(type, {book:this.props.book, type: "Borrow"});
   }
 
   render() {
