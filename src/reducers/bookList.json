@@ -11,7 +11,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+    "lat": 37.2249,
+    "lng": -122.3457
   },
   "1": { 
     "title": "Great Expectations",
@@ -25,7 +27,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2249,
+        "lng": -122.3447
   },
   "2": {
     "title": "Great Expectations",
@@ -39,7 +43,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.3249,
+        "lng": -122.3447
   },
   "3": {
     "title": "Great Expectations",
@@ -53,7 +59,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2679,
+        "lng": -122.4557
   },
   "4": {
     "title": "Great Expectations",
@@ -67,7 +75,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2889,
+        "lng": -122.3247
   },
   "6": {
     "title": "Great Expectations",
@@ -81,7 +91,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2789,
+        "lng": -122.3456
   },
   "7": {
     "title": "Great Expectations",
@@ -95,7 +107,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2345,
+        "lng": -122.3426
   },
   "8": {
     "title": "Great Expectations",
@@ -109,7 +123,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre":"Genre1"
+    "genre":"Genre1",
+        "lat": 37.2789,
+        "lng": -122.3137
   },
   "9": {
     "title": "Crocodile Tears",
@@ -123,7 +139,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre": "Genre2"
+    "genre": "Genre2",
+        "lat": 37.2789,
+        "lng": -122.2348
 
   },
   "10": {
@@ -138,7 +156,9 @@
     "category": [
         "Juvenile Fiction"
     ],
-    "genre": "Genre2"
+    "genre": "Genre2",
+        "lat": 37.2349,
+        "lng": -122.3397
   },
   "11": { 
     "title": "Crocodile Tears",

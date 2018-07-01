@@ -1,0 +1,98 @@
+{
+    "0": {
+        "profileId": "0",
+        "name": "RobinSunny",
+        "firstname": "Robin",
+        "lastname": "Sunny",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/778/medium/Felix_Alvarado_1.jpg?1523987541",
+        "coordinates": {
+            "latitude": 37.1578,
+            "longitude": -122.8943
+        }
+            
+    },
+    "1": {
+        "profileId": "1",
+        "name": "KartikParihar",
+        "firstname": "Kartik",
+        "lastname": "Parihar",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/798/medium/Kartikeya_Parihar_2.jpg?1523987649",
+        "coordinates": {
+            "latitude": 37.2249,
+            "longitude": -122.3457,
+        }
+            
+    },
+    "2": {
+        "profileId": "2",
+        "name": "TiffanyTang",
+        "firstname": "Tiffany",
+        "lastname": "Tang",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/799/medium/Tiffany_Tang_2.jpg?1523989054",
+        "coordinates": {
+            "latitude": 37.8462,
+            "longitude": -122.7924
+        }
+            
+    },
+    "3": {
+        "profileId": "3",
+        "name": "NickHalloran",
+        "firstname": "Nick",
+        "lastname": "Halloran",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/772/medium/Nicholas_Halloran_2.jpg?1523988146",
+        "coordinates": {
+            "latitude": 37.9244,
+            "longitude": -122.3479
+        }
+            
+    },
+    "4": {
+        "profileId": "4",
+        "name": "NateCunha",
+        "firstname": "Nate",
+        "lastname": "Cunha",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/775/medium/Nathaniel_Cunna_2.jpg?1523988134",
+        "coordinates": {
+            "latitude": 37.8249,
+            "longitude": -122.4502
+        }
+            
+    },
+    "5": {
+        "profileId": "5",
+        "name": "FelixAlvarado",
+        "firstname": "Felix",
+        "lastname": "Alvarado",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/778/medium/Felix_Alvarado_1.jpg?1523987541",
+        "coordinates": {
+            "latitude": 37.9824,
+            "longitude": -122.1379
+        }
+            
+    },
+    "6": {
+        "profileId": "6",
+        "name": "KenChan",
+        "firstname": "Ken",
+        "lastname": "Chan",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/805/medium/Ken_Chan_2.jpg?1523987664",
+        "coordinates": {
+            "latitude": 37.0385,
+            "longitude": -122.2397
+        }
+            
+    },
+    "7": {
+        "profileId": "7",
+        "name": "FarahQuader",
+        "firstname": "Farah",
+        "lastname": "Quader",
+        "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/796/medium/Farah_Quader_1.jpg?1523987529",
+        "coordinates": {
+            "latitude": 37.0385,
+            "longitude": -122.2397
+        }
+            
+    },
+}
