@@ -19,7 +19,7 @@
         "avatar": "https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/798/medium/Kartikeya_Parihar_2.jpg?1523987649",
         "coordinates": {
             "latitude": 37.2249,
-            "longitude": -122.3457,
+            "longitude": -122.3457
         }
             
     },
@@ -94,5 +94,5 @@
             "longitude": -122.2397
         }
             
-    },
+    }
 }

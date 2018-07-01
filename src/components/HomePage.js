@@ -54,6 +54,7 @@ class HomePage extends Component {
                 return <SearchListItem navigate={this.props.navigation.navigate} book={item}/>
             }
             }
+            keyExtractor={(item,index) => `${index}`}
             />
 
         </View>

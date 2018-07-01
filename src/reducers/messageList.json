@@ -1,0 +1,78 @@
+{
+  "1": {
+    "id": 1,
+    "sender": "Tiffany Tang",
+    "content":
+      "This is the first message, I am going to write a long message so that I can test if it is wrapped or not! hahahahhehehehI am happy.",
+    "sentTime": "10:20 am"
+  },
+  "2": {
+    "id": 2,
+    "sender": "Elon Musk",
+    "content":
+      "Hello, Tiffany. I see that you have some copies of Harry Potter in your collection. Can I borrow one?",
+    "sentTime": "10:21 am"
+  },
+  "3": {
+    "id": 3,
+    "sender": "Tiffany Tang",
+    "content":
+      "Hi Elon, great to meet you! Sure thing! Which volume you'd like to borrow?",
+    "sentTime": "10:22 am"
+  },
+  "4": {
+    "id": 4,
+    "sender": "Elon Musk",
+    "content": "Deathly Hallows, the first part.",
+    "sentTime": "10:22 am"
+  },
+  "5": {
+    "id": 5,
+    "sender": "Tiffany Tang",
+    "content":
+      "Alright, that one is available now. When do you wnat to pick it up?",
+    "sentTime": "10:23 am"
+  },
+  "6": {
+    "id": 6,
+    "sender": "Elon Musk",
+    "content": "Are you free this afternoon around 3 pm?",
+    "sentTime": "10:24 am"
+  },
+  "7": {
+    "id": 7,
+    "sender": "Tiffany Tang",
+    "content": "Let me see...",
+    "sentTime": "10:25 am"
+  },
+  "8": {
+    "id": 8,
+    "sender": "Tiffany Tang",
+    "content": "Yes, I am! Let's meet at the Starbucks besides Safeway",
+    "sentTime": "10:25 am"
+  },
+  "9": {
+    "id": 9,
+    "sender": "Elon Musk",
+    "content": "Is it the one near the Gateway Plaza?",
+    "sentTime": "10:26 am"
+  },
+  "10": {
+    "id": 10,
+    "sender": "Tiffany Tang",
+    "content": "Yes, it is!",
+    "sentTime": "10:26 am"
+  },
+  "11": {
+    "id": 11,
+    "sender": "Elon Musk",
+    "content": "Cool! I'll meet you at Starbucks at 3 then. Thank you!",
+    "sentTime": "10:26 am"
+  },
+  "12": {
+    "id": 12,
+    "sender": "Tiffany Tang",
+    "content": "You're welcome. See you later!",
+    "sentTime": "10:28 am"
+  }
+}
