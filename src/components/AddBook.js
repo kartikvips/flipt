@@ -46,7 +46,7 @@ class AddBook extends Component {
             searchIcon={{size: 24}}
             value={this.state.isbn}
             onChangeText={text => this.onChangeText(text)}
-            placeholder="Enter ISBN..."
+            placeholder="Enter ISBN or Title"
           />
           <Button onPress={ () => this.handlePress() }>
             search

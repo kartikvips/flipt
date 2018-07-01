@@ -25,7 +25,10 @@ class HomePage extends Component {
 
   render() {
       
-    
+    // navigator.geolocation.getCurrentPosition(position  => {
+    //   console.log(position);
+    // });
+
     return (
       <View style={{ flex: 1 }}>
         {/* <Header headerText="Search" /> */}

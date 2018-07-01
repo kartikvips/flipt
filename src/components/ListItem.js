@@ -46,7 +46,7 @@ const styles = {
     resizeMode: Image.resizeMode.contain
   },
   containerStyle: {
-    flex: 1,
+    height: 180,
     flexDirection: "column"
   }
 };

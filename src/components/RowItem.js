@@ -13,9 +13,9 @@ class RowItem extends Component {
     const { books, genre } = this.props;
 
     return (
-      <Card style={{ flex: 1 }}>
+      <Card style={{  }}>
         <CardSection>
-          <Text>{genre}</Text>
+          <Text style={{color: '#fff'}}>{genre}</Text>
         </CardSection>
         <FlatList
           showsHorizontalScrollIndicator={false}
