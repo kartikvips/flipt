@@ -76,7 +76,7 @@ let genres = [
 
 const mapStateToProps = state => {
   const { auth, books } = state;
-  console.log(auth);
+  // console.log(auth);
   return { auth, books };
 };
 
