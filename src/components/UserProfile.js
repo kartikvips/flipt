@@ -9,8 +9,9 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class UserProfile extends Component {
 
+
+
   static navigationOptions = ({navigation})=>{
-    console.log('this is the navigation',navigation);
     let name;
     if (navigation.getParam('user')) {name = navigation.getParam('user').name ;}
     if (navigation.state.params && !navigation.getParam('user')) {name = navigation.state.params.name;}
@@ -29,7 +30,19 @@ class UserProfile extends Component {
       headerLeft: null
     })
   }
-  
+
+  state={ user: this.props.auth}
+
+  componentDidMount() {
+    this.props.fetchUser(this.props.auth._id);
+  }
+
+  componentWillReceiveProps(nextProps) {
+
+    if (this.props.auth !== nextProps.auth) {
+      this.setState({user: nextProps.auth});
+    }
+  }
   booksByGenre(genre) {
     return Object.values(this.props.books).filter(book => book.genre === genre)
   }
@@ -48,7 +61,7 @@ class UserProfile extends Component {
           
                 <RowItem
                   genre={"Owned Books"}
-                  books={this.props.auth.books}
+                  books={this.state.user.ownedBook}
                   navigate={this.props.navigation.navigate}
                 />
                 <RowItem
@@ -93,4 +106,4 @@ const mapStateToProps = ({ auth, books }) => {
   return { auth, books }
 }
 
-export default connect(mapStateToProps, null)(UserProfile);
+export default connect(mapStateToProps, {fetchUser})(UserProfile);

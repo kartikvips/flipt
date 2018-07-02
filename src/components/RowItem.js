@@ -13,7 +13,7 @@ class RowItem extends Component {
     const { books, genre } = this.props;
 
     return (
-      <Card style={{  }}>
+      <Card style={{  height: 210  }}>
         <CardSection2>
           <Text style={{color: '#fff'}}>{genre}</Text>
         </CardSection2>
