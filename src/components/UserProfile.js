@@ -9,9 +9,16 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class UserProfile extends Component {
 
-  static navigationOptions = ({ navigation })=>{
+
+
+  static navigationOptions = ({navigation})=>{
+    let name;
+    if (navigation.getParam('user')) {name = navigation.getParam('user').name ;}
+    if (navigation.state.params && !navigation.getParam('user')) {name = navigation.state.params.name;}
+ 
     return ({
-      title: navigation.getParam('user').name,
+      title: name,
+      // title: this.props.auth.name,
       headerRight: (
         <Icon.Button
           name="message-text-outline"
@@ -23,7 +30,19 @@ class UserProfile extends Component {
       headerLeft: null
     })
   }
-  
+
+  state={ user: this.props.auth}
+
+  componentDidMount() {
+    this.props.fetchUser(this.props.auth._id);
+  }
+
+  componentWillReceiveProps(nextProps) {
+
+    if (this.props.auth !== nextProps.auth) {
+      this.setState({user: nextProps.auth});
+    }
+  }
   booksByGenre(genre) {
     return Object.values(this.props.books).filter(book => book.genre === genre)
   }
@@ -37,7 +56,7 @@ class UserProfile extends Component {
           
                 <RowItem
                   genre={"Owned Books"}
-                  books={this.props.auth.books}
+                  books={this.state.user.ownedBook}
                   navigate={this.props.navigation.navigate}
                 />
                 <RowItem
@@ -78,8 +97,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
-  console.log("auth in userProfile (MSP)",auth);
-  return { auth, books }
-}
+  return { auth, books };
+};
 
-export default connect(mapStateToProps, null)(UserProfile);
+export default connect(mapStateToProps, {fetchUser})(UserProfile);

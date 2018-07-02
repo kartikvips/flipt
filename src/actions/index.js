@@ -2,28 +2,19 @@ import axios from "axios";
 import { FETCH_USER, REGISTER_USER } from "./types";
 import * as UserApiUtil from '../util/user_api_util';
 
+export const fetchUser = (id) => {
+  return  function(dispatch) {
 
-// export const fetchUser = () => {
-//   return function (dispatch) {
-//     axios
-//       .get('/api/current_user')
-//       .then(res => dispatch({ type: FETCH_USER, payload: res.data }))
-//   }
-// }
+    axios
+      .get(`http://localhost:5000/api/current_user/${id}`)
+      .then(res => {
 
-const receiveUser = payload => ({
-  type: FETCH_USER,
-  payload
-})
-
-// get current user
-export const fetchUser = () => dispatch => {
-  return UserApiUtil.fetchUser()
-    .then(res => dispatch(receiveUser(res.data)))
-    .catch(res => console.log("err", res))
-}
+        return dispatch({ type: FETCH_USER, payload: res.data });
+      });
+  };
+};
 
 export const registerUser = user => ({
   type: REGISTER_USER,
   user
-})
+});

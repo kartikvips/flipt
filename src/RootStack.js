@@ -20,7 +20,7 @@ const RootStack = createStackNavigator(
     BookProfile: BookProfile,
     Messages: Messages,
     Map: screen
-  }, 
+  }
 
 );
 

@@ -5,6 +5,7 @@ import { SearchBar } from 'react-native-elements';
 import { Input, Card, CardSection, Button2, Button, BookDetails } from './common';
 import Footer from "./common/Footer";
 import { fetchGoogleBook, createBook } from '../actions/book';
+import { fetchUser } from '../actions/index';
 
 class AddBook extends Component {
   static navigationOptions = {
@@ -16,6 +17,9 @@ class AddBook extends Component {
 
   componentDidMount() {
     // console.log("in Addbook componentDidMount, the book is", this.props.books[this.state.isbn] || "yo");
+    if (!this.props.auth){
+    this.props.navigation.navigate('Login');
+    }
   }
 
   onChangeText(text) {
@@ -44,14 +48,19 @@ class AddBook extends Component {
         </View>
       );
     }else {
-      return <Image style={{ flex: 1, blurRadius: 95}} source={{ uri: 'https://res.cloudinary.com/dbm56y2y/image/upload/v1530424315/blurbook.jpg' }}/>;
+      return <Image style={{ flex: 1}} source={{ uri: 'https://res.cloudinary.com/dbm56y2y/image/upload/v1530424315/blurbook.jpg' }}/>;
     }
   }
 
   addBook(book) {
-    book.ownerId  = this.props.auth.id;
-    this.props.createBook(book);
-    this.props.navigation.navigate('User');
+    // console.log('jjjjjjkjhkhlfglyfligl' ,this.props.auth)
+    book.ownerId  = this.props.auth._id;
+    navigator.geolocation.getCurrentPosition(position  => {
+      book.coordinates = [position.coords.latitude,position.coords.longitude];
+      this.props.createBook(book);
+    });
+    this.props.navigation.navigate('User', this.props.auth);
+
   }
 
   render() {
@@ -71,7 +80,7 @@ class AddBook extends Component {
             search
           </Button2>
         </View>
-        <View style={{ flex: 1,  resizeMode: Image.resizeMode.stretch }}>
+        <View style={{ flex: 1 }}>
           {/* <Image 
             source={require('../../assets/barcode-read.svg')}
             style={{ height:50, width: 70, color: "" }}
@@ -118,4 +127,4 @@ const mapStateToProps = state => {
   return { books: state.books, auth: state.auth }
 }
 
-export default connect(mapStateToProps, { fetchGoogleBook, createBook })(AddBook);
+export default connect(mapStateToProps, { fetchGoogleBook, createBook, fetchUser })(AddBook);
