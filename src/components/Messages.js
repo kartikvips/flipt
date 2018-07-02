@@ -11,12 +11,19 @@ import {
 } from 'react-native';
 import { Input } from './common';
 import MessageListItem from './MessageListItem';
-
+import { fetchUser } from '../actions/index';
 
 class Messages extends Component {
   static navigationOptions = ({ navigation }) => {
     chatWith = navigation.getParam('chatWith')
     return { title: chatWith };
+  }
+
+  componentDidMount() {
+    console.log("before fetch",this.props.auth)
+    this.props.fetchUser();
+    console.log("after fetch", this.props.auth)
+
   }
 
   state = { text: ""}
@@ -62,7 +69,11 @@ const mapStateToProps = ({ auth, messages }) => {
   return { auth, messages: Object.values(messages)}
 }
 
-export default connect(mapStateToProps, null)(Messages);
+const mapDispatchToProps = dispatch => ({
+  fetchUser: () => dispatch(fetchUser())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Messages);
 
 const styles = {
   inputContainerStyle: {
