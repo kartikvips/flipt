@@ -31,11 +31,6 @@ class UserProfile extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        {/* <Header headerText="Username" /> */}
-        {/* For testing */}
-        {/* <Button onPress={() => console.log(this.props)}>log props</Button> */}
-        {/* <Button onPress={() => this.props.navigation.navigate('Login')}>login</Button> */}
-        {/* <Button onPress={() => this.props.fetchUser()}>fetch User</Button> */}
         <View style={{ flex: 1, margin: 0 }}>
           <Image source ={{ uri: 'https://res.cloudinary.com/dbm56y2y/image/upload/v1530419704/blurredLibrary.jpg'}} style={styles.image2}/>
           <Image source={{uri: `${this.props.auth.avatar}`}} style={styles.image}/>
@@ -83,7 +78,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
-  console.log(auth.books);
+  console.log("auth in userProfile (MSP)",auth);
   return { auth, books }
 }
 
