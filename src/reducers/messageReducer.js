@@ -7,7 +7,7 @@ const messageReducer = (state = data, action) => {
     case RECEIVE_ALL_MESSAGES:
       return action.payload;
     case RECEIVE_MESSAGE:
-      return {...state, [action.payload._id]: action.payload }
+      return {...state, [action.payload.id]: action.payload }
     default:
       return state;
   }

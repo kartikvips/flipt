@@ -1,15 +1,17 @@
 import * as MessageApiUtil from '../util/message_api_util';
-import { RECEIVE_ALL_MESSAGES } from './types';
+import { RECEIVE_ALL_MESSAGES, RECEIVE_MESSAGE } from './types';
 
 const receiveAllMessages = messages => ({
   type: RECEIVE_ALL_MESSAGES,
   payload: messages
 })
 
-const receiveMessage = message => ({
-  type: RECEIVE_MESSAGE,
-  payload: message
-})
+export const receiveMessage = message => {
+  return {
+    type: RECEIVE_MESSAGE,
+    payload: message
+  }
+}
 
 export const fetchMessages = chatId => dispatch => (
   MessageApiUtil.fetchMessages(chatId)

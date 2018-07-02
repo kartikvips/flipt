@@ -5,17 +5,25 @@ const MessageListItem = (props) => {
   const { message, auth } = props;
   const { sender, content, sentTime } = message;
   const styles = () => {
-    if (sender === auth.name) {
+    if (sender === "Tiffany Tang") {
       return currentUserStyles;
     } 
     return otherUserStyles;
+  }
+
+  const senderName = () => {
+    if (sender === "Tiffany Tang") {
+      return auth.name;
+    }
+
+    return props.chatWith;
   }
 
   const { containerStyle, senderStyle, viewStyle, contentStyle, timeStyle } = styles();
 
   return (
     <View style={containerStyle}>
-      <Text style={senderStyle}>{sender}</Text>
+      <Text style={senderStyle}>{senderName()}</Text>
       <View style={viewStyle}>
         <Text style={contentStyle}>{content}</Text>
       </View>
