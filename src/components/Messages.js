@@ -19,12 +19,11 @@ class Messages extends Component {
     return { title: chatWith };
   }
 
-  componentDidMount() {
-    console.log("before fetch",this.props.auth)
-    this.props.fetchUser();
-    console.log("after fetch", this.props.auth)
-
-  }
+  // componentDidMount() {
+  //   console.log("before fetch",this.props.auth)
+  //   this.props.fetchUser();
+  //   console.log("after fetch", this.props.auth)
+  // }
 
   state = { text: ""}
 

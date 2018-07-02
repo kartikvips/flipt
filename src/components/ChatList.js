@@ -11,12 +11,12 @@ class ChatList extends Component {
     title: "Messages"
   }
 
-  componentDidMount() {
-    const { auth, chats } = this.props;
-    console.log(auth);
-    debugger;
-    this.props.fetchChatrooms(auth._id);
-  }
+  // componentDidMount() {
+  //   const { auth, chats } = this.props;
+  //   console.log("auth _id is ", auth._id);
+  //   debugger;
+  //   this.props.fetchChatrooms(auth._id);
+  // }
 
   render(){
     return (
@@ -42,7 +42,7 @@ const mapStateToProps = ({ auth, chats }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchChatrooms: userId => disaptch(fetchChatrooms(userId))
+  fetchChatrooms: userId => dispatch(fetchChatrooms(userId))
 })
 
-export default connect(mapStateToProps)(ChatList);
+export default connect(mapStateToProps, mapDispatchToProps)(ChatList);
