@@ -19,14 +19,11 @@ const receiveUser = payload => ({
 // get current user
 export const fetchUser = () => dispatch => {
   return UserApiUtil.fetchUser()
-    .then(res => {
-      console.log("res user", res)
-      return dispatch(receiveUser(res.data))
-    })
+    .then(res => dispatch(receiveUser(res.data)))
     .catch(res => console.log("err", res))
 }
 
-export const registerUser = (user) => ({
+export const registerUser = user => ({
   type: REGISTER_USER,
   user
 })
