@@ -97,12 +97,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
-<<<<<<< HEAD
-
-=======
-  console.log("auth in userProfile (MSP)",auth);
->>>>>>> 494367f2731c89cc04b124f2006d2a686f92e544
-  return { auth, books }
-}
+  return { auth, books };
+};
 
 export default connect(mapStateToProps, {fetchUser})(UserProfile);
