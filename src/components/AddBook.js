@@ -59,6 +59,7 @@ class AddBook extends Component {
       book.coordinates = [position.coords.latitude,position.coords.longitude];
       this.props.createBook(book);
     });
+    this.props.fetchUser(this.props.auth._id);
     this.props.navigation.navigate('User', this.props.auth);
 
   }

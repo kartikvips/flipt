@@ -34,7 +34,8 @@ class UserProfile extends Component {
   state={ user: this.props.auth}
 
   componentDidMount() {
-    this.props.fetchUser(this.props.auth._id);
+     this.props.fetchUser(this.props.auth._id);
+
   }
 
   componentWillReceiveProps(nextProps) {
@@ -97,6 +98,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
+
   return { auth, books };
 };
 

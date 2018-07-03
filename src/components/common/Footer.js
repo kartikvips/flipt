@@ -51,7 +51,6 @@ class Footer extends Component {
 }
 
 const mapStateToProps = ( state ) => {
-  // debugger;
   return { user: state.auth }
 }
 
