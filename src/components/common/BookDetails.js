@@ -6,8 +6,11 @@ import {Button} from './index';
 export class BookDetails extends React.Component {
 
     buttonText() {
+        if(this.props.text == 'Add'){
+            return 'Add';
+        }
         if(!this.props.auth){
-            return "Borrow";
+            return "Request";
         }
         if (this.props.auth._id === this.props.book.ownerId) {
             return "Delete";

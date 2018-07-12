@@ -31,4 +31,4 @@ const mapStateToProps = state => {
     return { books: state.books, auth: state.auth };
   };
 
-  export default connect(mapStateToProps, null)(BookProfile);
+  export default connect(mapStateToProps, {})(BookProfile);
