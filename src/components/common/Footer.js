@@ -15,7 +15,9 @@ class Footer extends Component {
   handlePress(type) {
     if (type !== "Home" && !this.props.user) {
       this.props.navigate('Login')
-    } else {
+    } else if (type == 'User') {
+      this.props.navigate('User')
+    }else {
       this.props.navigate(type, { user: this.props.user})
     }
   }
@@ -57,7 +59,6 @@ class Footer extends Component {
 }
 
 const mapStateToProps = ( state ) => {
-  // debugger;
   return { user: state.auth }
 }
 

@@ -1,13 +1,26 @@
 import React from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
 import {Button} from './index';
-import {connect} from 'react-redux';
+
 
 export class BookDetails extends React.Component {
 
+    buttonText() {
+        if(this.props.text == 'Add'){
+            return 'Add';
+        }
+        if(!this.props.auth){
+            return "Request";
+        }
+        if (this.props.auth._id === this.props.book.ownerId) {
+            return "Delete";
+        } else {
+            return "Borrow";
+        }
+    }
     render(){
         const {infoHolder, imageHolder, image, rightSide, textStyle} = styles;
-        const {book, text, action} = this.props;
+        const {book, action} = this.props;
     return (
         <View style={ infoHolder }>
         <View style={ imageHolder }>
@@ -21,7 +34,7 @@ export class BookDetails extends React.Component {
         <Text style={ textStyle }>{book.author}</Text>
         <Text style={ textStyle }>{book.category}</Text>
         <Text style={ textStyle }>Published {book.year}</Text>
-        <Button onPress={() => action(book)}>{text}</Button>
+        <Button onPress={() => action(book)}>{this.buttonText()}</Button>
         </View>
         </View>
         );
@@ -56,9 +69,6 @@ const styles = {
     }
 };
 
-const mapStateToProps = state => {
-    // debugger;
-    return { books: state.books, auth: state.auth };
-  };
 
-  export default connect(mapStateToProps, null)(BookDetails);
+
+  

@@ -31,16 +31,18 @@ class UserProfile extends Component {
     })
   }
 
-  state={ user: this.props.auth}
+  state={ user: this.props.auth, books: this.props.auth.ownedBook}
 
   componentDidMount() {
-    this.props.fetchUser(this.props.auth._id);
+     this.props.fetchUser(this.props.auth._id);
+     console.log('componenet did mount');
+
   }
 
   componentWillReceiveProps(nextProps) {
-
-    if (this.props.auth !== nextProps.auth) {
-      this.setState({user: nextProps.auth});
+    if (this.props.auth.ownedBook !== nextProps.auth.ownedBook) {
+      console.log('component will receive props');
+      this.setState({book: nextProps.auth.ownedBook});
     }
   }
   booksByGenre(genre) {
@@ -97,6 +99,7 @@ const styles = {
 }
 
 const mapStateToProps = ({ auth, books }) => {
+
   return { auth, books };
 };
 
