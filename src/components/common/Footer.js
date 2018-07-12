@@ -35,6 +35,12 @@ class Footer extends Component {
           {...this.style("Home")}
         />
         <Icon.Button
+          name="map-o"
+          onPress={() =>this.handlePress("Map")}
+          backgroundColor="transparent"
+          {...this.style("Map")}
+        />
+        <Icon.Button
           name="user-o"
           backgroundColor="transparent"
           onPress={() => this.handlePress("User")}

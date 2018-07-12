@@ -9,9 +9,9 @@ import {
   ScrollView,
   TouchableOpacity
 } from 'react-native';
-import { Input } from './common';
 import MessageListItem from './MessageListItem';
 import { fetchUser } from '../actions/index';
+import { receiveMessage } from '../actions/messages';
 
 class Messages extends Component {
   static navigationOptions = ({ navigation }) => {
@@ -19,38 +19,48 @@ class Messages extends Component {
     return { title: chatWith };
   }
 
+  chatWith = this.props.navigation.getParam('chatWith');
   // componentDidMount() {
   //   console.log("before fetch",this.props.auth)
   //   this.props.fetchUser();
   //   console.log("after fetch", this.props.auth)
   // }
 
-  state = { text: ""}
+  state = { id: this.props.messages.length + 1, sender: "Tiffany Tang", content: "", sentTime: "11:02 am"}
 
-  onChangeText(text) {
-    this.setState({ text })
+  onChangeText(content) {
+    this.setState({ content })
   }
 
   onPressSend() {
-    alert(this.state.text)
-    this.setState({ text: "" })
+    // alert(this.state.content)
+    this.props.receiveMessage(this.state);
+    this.setState({ content: "" })
+    this.props.navigation.navigate("Messages", { chatWith: this.chatWith })
   }
 
   render(){
     return <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding">
         <View style={{ flex: 11 }}>
-          <FlatList ref={elm => (this.flatlist = elm)} data={this.props.messages} renderItem={({ item }) => {
-              return <MessageListItem message={item} auth={this.props.auth} />;
-            }} keyExtractor={item => `${item.id}`} onLayout={() => this.flatlist.scrollToEnd(
-                { animated: false }
-              )} />
+          <FlatList 
+            ref={elm => (this.flatlist = elm)}
+            data={this.props.messages} 
+            renderItem={({ item }) => (
+              <MessageListItem 
+                message={item}
+                chatWith={this.chatWith}
+                auth={this.props.auth} 
+              />
+            )} 
+            keyExtractor={item => `${item.id}`} 
+            onLayout={() => this.flatlist.scrollToEnd({ animated: false })} />
         </View>
         <ScrollView contentContainerStyle={styles.inputContainerStyle}>
           <TextInput
             placeholder="New message here..."
             style={styles.inputStyle}
-            value={this.state.text}
-            onChangeText={text => this.onChangeText(text)}
+            value={this.state.content}
+            onChangeText={content => this.onChangeText(content)}
           />
           <TouchableOpacity
             style={styles.buttonStyle}
@@ -69,10 +79,11 @@ const mapStateToProps = ({ auth, messages }) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchUser: () => dispatch(fetchUser())
+  fetchUser: () => dispatch(fetchUser()),
+  receiveMessage: message => dispatch(receiveMessage(message))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Messages);
+export default connect(mapStateToProps, { receiveMessage })(Messages);
 
 const styles = {
   inputContainerStyle: {
