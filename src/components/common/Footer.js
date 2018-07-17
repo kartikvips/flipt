@@ -15,9 +15,7 @@ class Footer extends Component {
   handlePress(type) {
     if (type !== "Home" && !this.props.user) {
       this.props.navigate('Login')
-    } else if (type == 'User') {
-      this.props.navigate('User')
-    }else {
+    } else {
       this.props.navigate(type, { user: this.props.user})
     }
   }

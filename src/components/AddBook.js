@@ -59,6 +59,7 @@ class AddBook extends Component {
       book.coordinates = [position.coords.latitude,position.coords.longitude];
       this.props.createBook(book);
     });
+    //the main problem of why this isn't getting the new book is becuase its still trying to used books based on the passed prop
     this.props.fetchUser(this.props.auth._id);
     this.props.navigation.navigate('User', this.props.auth);
 
