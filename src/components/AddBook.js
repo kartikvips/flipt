@@ -57,10 +57,13 @@ class AddBook extends Component {
     book.ownerId  = this.props.auth._id;
     navigator.geolocation.getCurrentPosition(position  => {
       book.coordinates = [position.coords.latitude,position.coords.longitude];
-      this.props.createBook(book);
+      this.props.createBook(book).then(book => {
+        console.log('the book is', book);
+        this.props.fetchUser(book.payload.ownerId);
+      });
     });
     //the main problem of why this isn't getting the new book is becuase its still trying to used books based on the passed prop
-    this.props.fetchUser(this.props.auth._id);
+    // this.props.fetchUser(this.props.auth._id);
     this.props.navigation.navigate('User', this.props.auth);
 
   }
