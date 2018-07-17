@@ -50,10 +50,10 @@ class LoginModal extends Component {
   };
 
   // Handle Login with Facebook button tap
-  loginWithFacebook = () => this.openURL('https://flipt-t.herokuapp.com/auth/facebook');
+  loginWithFacebook = () => this.openURL('http://localhost:5000/auth/facebook');
 
   // Handle Login with Google button tap
-  loginWithGoogle = () => this.openURL('https://flipt-t.herokuapp.com/auth/google');
+  loginWithGoogle = () => this.openURL('http://localhost:5000/auth/google');
 
   // Open URL in a browser
   openURL = (url) => {
