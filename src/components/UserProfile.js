@@ -34,15 +34,13 @@ class UserProfile extends Component {
   state={ user: this.props.auth, books: this.props.auth.ownedBook}
 
   componentDidMount() {
+    console.log('the user id is ', this.props.auth._id);
      this.props.fetchUser(this.props.auth._id);
-     console.log('componenet did mount');
-
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.auth.ownedBook !== nextProps.auth.ownedBook) {
-      console.log('component will receive props');
-      this.setState({book: nextProps.auth.ownedBook});
+      this.setState({user: nextProps.auth, book: nextProps.auth.ownedBook});
     }
   }
   booksByGenre(genre) {
