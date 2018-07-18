@@ -1,7 +1,11 @@
 import axios from 'axios';
 
 export const fetchBook = (id) => (
-  axios.get(`/books/${id}`)
+  axios.get(`http://localhost:5000/books/${id}`)
+);
+
+export const removeBook = (id) => (
+  axios.delete(`http://localhost:5000/books/${id}`)
 );
 
 export const fetchGoogleBook = searchInput => (

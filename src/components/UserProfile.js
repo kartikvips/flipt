@@ -34,7 +34,7 @@ class UserProfile extends Component {
   state={ user: this.props.auth, books: this.props.auth.ownedBook}
 
   componentDidMount() {
-    console.log('the user id is ', this.props.auth._id);
+    // console.log('the user id is ', this.props.auth._id);
      this.props.fetchUser(this.props.auth._id);
   }
 

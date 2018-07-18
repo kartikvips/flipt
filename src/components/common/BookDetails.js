@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
 import {Button} from './index';
+import { withNavigation } from 'react-navigation';
 
-
-export class BookDetails extends React.Component {
+class BookDetails extends React.Component {
 
     buttonText() {
         if(this.props.text == 'Add'){
@@ -16,6 +16,15 @@ export class BookDetails extends React.Component {
             return "Delete";
         } else {
             return "Borrow";
+        }
+    }
+
+    handleAction() {
+        const {book, action, type} = this.props;
+        console.log('the delete button props are', this.props);
+        action(book);
+        if (type === 'delete'){
+            this.props.navigation.navigate('User');
         }
     }
     render(){
@@ -34,7 +43,7 @@ export class BookDetails extends React.Component {
         <Text style={ textStyle }>{book.author}</Text>
         <Text style={ textStyle }>{book.category}</Text>
         <Text style={ textStyle }>Published {book.year}</Text>
-        <Button onPress={() => action(book)}>{this.buttonText()}</Button>
+        <Button onPress={() => this.handleAction()}>{this.buttonText()}</Button>
         </View>
         </View>
         );
@@ -69,6 +78,6 @@ const styles = {
     }
 };
 
-
+export default withNavigation(BookDetails);
 
   

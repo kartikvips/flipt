@@ -35,6 +35,7 @@ class LoginModal extends Component {
   handleOpenURL = ({ url }) => {
     // Extract stringified user string out of the URL
     const [, user_string] = url.match(/user=([^#]+)/);
+  
     this.setState({
       // Decode the user string and parse it into JSON
       user: JSON.parse(decodeURI(user_string))
@@ -50,10 +51,10 @@ class LoginModal extends Component {
   };
 
   // Handle Login with Facebook button tap
-  loginWithFacebook = () => this.openURL('https://flipt-t.herokuapp.com/auth/facebook');
+  loginWithFacebook = () => this.openURL('http://localhost:5000/auth/facebook');
 
   // Handle Login with Google button tap
-  loginWithGoogle = () => this.openURL('https://flipt-t.herokuapp.com/auth/google');
+  loginWithGoogle = () => this.openURL('http://localhost:5000/auth/google');
 
   // Open URL in a browser
   openURL = (url) => {
