@@ -1,5 +1,9 @@
 import axios from "axios";
-import { FETCH_USER, REGISTER_USER } from "./types";
+import { 
+  FETCH_USER,
+  REGISTER_USER,
+  RECEIVE_ALL_USERS
+} from "./types";
 import * as UserApiUtil from '../util/user_api_util';
 
 export const fetchUser = (id) => {
@@ -13,7 +17,19 @@ export const fetchUser = (id) => {
   };
 };
 
+export const fetchUsers = () => dispatch => (
+  UserApiUtil.fetchUsers()
+    .then(users =>  dispatch(receiveUsers(users)))
+    .catch(err => console.log(err))
+);
+
 export const registerUser = user => ({
   type: REGISTER_USER,
   user
 });
+
+
+const receiveUsers = (payload) =>({
+  type: RECEIVE_ALL_USERS,
+  payload
+})

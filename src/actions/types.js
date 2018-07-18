@@ -7,3 +7,4 @@ export const RECEIVE_ALL_MESSAGES = "receive_all_messages";
 export const RECEIVE_CHATROOM = "receive_chatroom";
 export const RECEIVE_ALL_CHATROOMS = "receive_all_chatrooms";
 export const REMOVE_BOOK = "remove_book";
+export const RECEIVE_ALL_USERS = "receive_all_users";

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, FlatList, Image } from 'react-native';
 import { connect } from 'react-redux';
-import { fetchUser } from '../actions'
+import { fetchUser, fetchUsers } from '../actions'
 import { Header, Card, Button } from './common';
 import Footer from './common/Footer';
 import RowItem from './RowItem';
@@ -36,6 +36,7 @@ class UserProfile extends Component {
   componentDidMount() {
     // console.log('the user id is ', this.props.auth._id);
      this.props.fetchUser(this.props.auth._id);
+     this.props.fetchUsers();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -101,4 +102,4 @@ const mapStateToProps = ({ auth, books }) => {
   return { auth, books };
 };
 
-export default connect(mapStateToProps, {fetchUser})(UserProfile);
+export default connect(mapStateToProps, {fetchUser, fetchUsers})(UserProfile);

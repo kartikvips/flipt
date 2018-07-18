@@ -7,5 +7,5 @@ export const fetchChatrooms = userId => {
 
 
 export const createChatroom = (userAId, userBId) => (
-  axios.post('message/new', { userAId, userBId })
+  axios.post(`message/new/${userAId}/${userBId}`)
 )
