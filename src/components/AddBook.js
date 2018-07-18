@@ -57,8 +57,15 @@ class AddBook extends Component {
     book.ownerId  = this.props.auth._id;
     navigator.geolocation.getCurrentPosition(position  => {
       book.coordinates = [position.coords.latitude,position.coords.longitude];
+
+      let newString = '';
+      for (let i = 0; i < book.description.length; i++){
+        if (book.description[i] !== '#'){newString += book.description[i];}
+      }
+      book.description = newString;
+      
       this.props.createBook(book).then(book => {
-        console.log('the book is', book);
+        // console.log('the book is', book);
         this.props.fetchUser(book.payload.ownerId);
       });
     });

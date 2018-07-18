@@ -7,6 +7,7 @@ export const fetchUser = (id) => {
     axios
       .get(`http://localhost:5000/api/current_user/${id}`)
       .then(res => {
+        console.log('made it to the fetch user', res);
         return dispatch({ type: FETCH_USER, payload: res.data });
       });
   };

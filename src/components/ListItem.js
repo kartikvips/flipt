@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 // import { CardSection } from './common';
 import { Image, Text, View, TouchableHighlight } from 'react-native';
 import { CardSection } from './common';
+import {connect} from 'react-redux';
+import { deleteBook } from '../actions/book';
 
 class ListItem extends Component {
 
   handlePress(type) {
-    this.props.navigate(type, {book:this.props.book, type: "Borrow"});
+    if (this.props.auth._id === this.props.book.ownerId) {
+      this.props.navigate(type, {book:this.props.book, action: this.props.navigation.deleteBook});
+    } else {
+    this.props.navigate(type, {book:this.props.book});
+    }
   }
+
 
   render() {
     const { titleStyle, coverStyle, containerStyle } = styles;
@@ -51,4 +58,8 @@ const styles = {
   }
 };
 
-export default ListItem;
+const mapStateToProps = state => {
+  return { auth: state.auth };
+};
+
+export default connect(mapStateToProps, { deleteBook })(ListItem);

@@ -8,12 +8,14 @@ class BookProfile extends React.Component {
 
     render() {
         const book = this.props.navigation.getParam('book', {title:'nothing'});
+        const action = this.props.navigation.getParam('action');
+        console.log('the action is', action);
         
 
         return( 
         <View style={{ flex: 1 }}>
            <View style={{ flex: 1 }}>
-             <BookDetails book={book} auth={this.props.auth}/>
+             <BookDetails book={book} action={action} auth={this.props.auth}/>
             <ScrollView>
 
                 <Text style= {{ marginTop: 15, marginLeft: 10 }}>{book.description}</Text>
