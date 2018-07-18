@@ -20,7 +20,7 @@ const ChatListItem = (props) => {
 
   const handlePress = () => {
     console.log(messages)
-    debugger;
+    // debugger;
     props.navigate("Messages", { chatWith, messages })
     // props.navigate("Messages", { chatWith: props.chat.chatWith })
   };
