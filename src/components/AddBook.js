@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { View, Text, Image, Linking } from 'react-native';
 import { SearchBar } from 'react-native-elements';
-import { Input, Card, CardSection, Button2, Button, BookDetails } from './common';
+import { Input, Card, CardSection, Button2, Button } from './common';
+import BookDetails from './common/BookDetails';
 import Footer from "./common/Footer";
 import { fetchGoogleBook, createBook } from '../actions/book';
 import { fetchUser } from '../actions/index';
@@ -63,14 +64,13 @@ class AddBook extends Component {
         if (book.description[i] !== '#'){newString += book.description[i];}
       }
       book.description = newString;
-      
+
       this.props.createBook(book).then(book => {
         // console.log('the book is', book);
         this.props.fetchUser(book.payload.ownerId);
       });
     });
-    //the main problem of why this isn't getting the new book is becuase its still trying to used books based on the passed prop
-    // this.props.fetchUser(this.props.auth._id);
+   
     this.props.navigation.navigate('User', this.props.auth);
 
   }

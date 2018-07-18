@@ -5,11 +5,12 @@ import { CardSection } from './common';
 import {connect} from 'react-redux';
 import { deleteBook } from '../actions/book';
 
+
 class ListItem extends Component {
 
   handlePress(type) {
     if (this.props.auth._id === this.props.book.ownerId) {
-      this.props.navigate(type, {book:this.props.book, action: this.props.navigation.deleteBook});
+      this.props.navigate(type, {book:this.props.book, action: this.props.deleteBook, type: 'delete'});
     } else {
     this.props.navigate(type, {book:this.props.book});
     }

@@ -20,12 +20,13 @@ export const fetchBook = id => dispatch => (
     .then(res => dispatch(receiveBook(res.data)))
 );
 
-export const deleteBook = book=> dispatch => {
+export const deleteBook = book => dispatch => {
+  console.log('made it to delete book', book);
   return BookApiUtil.removeBook(book._id)
     .then(res => {
-      console.log('the owner id is', res.data.ownerId);
+      // console.log('the owner id is', res.data.ownerId);
       getUser(res.data.ownerId).then(response => {
-        console.log('this is the response from the fetch user', response);
+        // console.log('this is the response from the fetch user', response);
         return dispatch({ type: FETCH_USER, payload: response.data });
       });
     });
