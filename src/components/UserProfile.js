@@ -65,6 +65,16 @@ class UserProfile extends Component {
                   books={this.booksByGenre("Genre2")}
                   navigate={this.props.navigation.navigate}
                 />
+                  <RowItem
+                   genre={"Requests"}
+                   books={this.booksByGenre("Genre2")}
+                   navigate={this.props.navigation.navigate}
+                 />
+                 <RowItem
+                  genre={"Pending Requests"}
+                  books={this.booksByGenre("Genre2")}
+                  navigate={this.props.navigation.navigate}
+                />
               );
             }}
 
@@ -78,7 +88,7 @@ class UserProfile extends Component {
 //dumb data for dev//
 let genres = [
   { id: 1, name: "Genre1" },
-  { id: 2, name: "Genre2" },
+  { id: 2, name: "Genre2" }
   // { id: 3, name: "Genre3" },
   // { id: 4, name: "Genre4" },
   // { id: 5, name: "Genre5" }
