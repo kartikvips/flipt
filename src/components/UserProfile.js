@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, FlatList, Image, SectionList, ScrollView } from 'react-native';
+import { View, FlatList, Image, SectionList, ScrollView, Modal, Text , TouchableHighlight} from 'react-native';
 import { connect } from 'react-redux';
 import { fetchUser, fetchUsers } from '../actions'
 import { Header, Card, Button } from './common';
@@ -16,6 +16,7 @@ class UserProfile extends Component {
     if (navigation.getParam('user')) {name = navigation.getParam('user').name ;}
     if (navigation.state.params && !navigation.getParam('user')) {name = navigation.state.params.name;}
  
+
     return ({
       title: name,
       // title: this.props.auth.name,
@@ -31,7 +32,11 @@ class UserProfile extends Component {
     })
   }
 
-  state={ user: this.props.auth, books: this.props.auth.ownedBook}
+  state={ user: this.props.auth, books: this.props.auth.ownedBook, modalVisible: true}
+
+  setModalVisible(visible) {
+    this.setState({modalVisible: visible});
+  }
 
   componentDidMount() {
     // console.log('the user id is ', this.props.auth._id);
@@ -55,6 +60,27 @@ class UserProfile extends Component {
           <Image source ={{ uri: 'https://res.cloudinary.com/dbm56y2y/image/upload/v1530419704/blurredLibrary.jpg'}} style={styles.image2}/>
           <Image source={{uri: `${this.props.auth.avatar}`}} style={styles.image}/>
           <ScrollView>
+          <Modal
+          style={{}}
+          animationType="slide"
+          transparent={false}
+          visible={this.state.modalVisible}
+          onRequestClose={() => {
+            alert('Modal has been closed.');
+          }}>
+          <View style={{marginTop: 100, backgroundColor: 'red'}}>
+            <View style={{}}>
+              <Text>Hello World!</Text>
+
+              <TouchableHighlight
+                onPress={() => {
+                  this.setModalVisible(!this.state.modalVisible);
+                }}>
+                <Text>Hide Modal</Text>
+              </TouchableHighlight>
+            </View>
+          </View>
+        </Modal>
                <RowItem
                   genre={"Owned Books"}
                   books={this.state.user.ownedBook}
