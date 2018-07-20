@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, FlatList, Image } from 'react-native';
+import { View, FlatList, Image, SectionList, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { fetchUser, fetchUsers } from '../actions'
 import { Header, Card, Button } from './common';
@@ -51,11 +51,11 @@ class UserProfile extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ flex: 1, margin: 0 }}>
+        <View style={{  flex:1, margin: 0 }}>
           <Image source ={{ uri: 'https://res.cloudinary.com/dbm56y2y/image/upload/v1530419704/blurredLibrary.jpg'}} style={styles.image2}/>
           <Image source={{uri: `${this.props.auth.avatar}`}} style={styles.image}/>
-          
-                <RowItem
+          <ScrollView>
+               <RowItem
                   genre={"Owned Books"}
                   books={this.state.user.ownedBook}
                   navigate={this.props.navigation.navigate}
@@ -66,15 +66,16 @@ class UserProfile extends Component {
                   navigate={this.props.navigation.navigate}
                 />
                   <RowItem
-                   genre={"Requests"}
-                   books={this.booksByGenre("Genre2")}
+                   genre={"Requests to Accept"}
+                   books={this.booksByGenre("Genre3")}
                    navigate={this.props.navigation.navigate}
                  />
                  <RowItem
                   genre={"Pending Requests"}
-                  books={this.booksByGenre("Genre2")}
+                  books={this.booksByGenre("Genre4")}
                   navigate={this.props.navigation.navigate}
                 />
+                </ScrollView>
               );
             }}
 
@@ -88,10 +89,10 @@ class UserProfile extends Component {
 //dumb data for dev//
 let genres = [
   { id: 1, name: "Genre1" },
-  { id: 2, name: "Genre2" }
-  // { id: 3, name: "Genre3" },
-  // { id: 4, name: "Genre4" },
-  // { id: 5, name: "Genre5" }
+  { id: 2, name: "Genre2" },
+  { id: 3, name: "Genre3" },
+  { id: 4, name: "Genre4" },
+  { id: 5, name: "Genre5" }
 ]
 //
 const styles = {
